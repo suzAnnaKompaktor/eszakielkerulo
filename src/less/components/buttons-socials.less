@@ -1,0 +1,55 @@
+/**
+ * @file
+ * components//buttons-socials.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../mixins/buttons-socials.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+
+.btn-social{
+  color: #FFFFFF;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: none !important;
+}
+
+.btn-facebook,
+.btn-twitter,
+.btn-googleplus{
+  .btn-social;
+}
+
+.btn-facebook{
+  .btn-variant-social(@color-facebook);
+}
+.btn-twitter{
+  .btn-variant-social(@color-twitter);
+}
+.btn-googleplus{
+  .btn-variant-social(@color-googleplus);
+}
+.btn-github{
+  .btn-variant-social(@color-github);
+}
+.btn-linkedin{
+  .btn-variant-social(@color-linkedin);
+}
+.btn-dropbox{
+  .btn-variant-social(@color-dropbox);
+}
+.btn-yahoo{
+  .btn-variant-social(@color-yahoo);
+}

@@ -1,0 +1,62 @@
+/**
+ * @file
+ * widgets/sidebar-widget.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/widgets.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.sidebar-widget{
+  padding:0 @default-space @default-space @default-space;
+  margin-bottom:@default-space;
+  .border-bottom;
+
+  .widget-header{
+    position: relative;
+  }
+
+  .widget-header h6{
+    .text-semi-bold;
+    font-size: 15px;
+    color:lighten(@text-color, 35%);
+  }
+
+  .widget-toggle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 17px;
+    font-size: 1.7rem;
+    line-height: 13px;
+    line-height: 1.3rem;
+    color:lighten(@text-color, 35%);
+    .text-bold;
+    .rotate(45deg);
+    .transition-transform(0.2s linear);
+
+    &:hover,
+    &:focus{
+      color: @link-color;
+    }
+  }
+
+  &.collapsed {
+    .widget-toggle {
+      .transition-transform(none);
+    }
+  }
+
+}

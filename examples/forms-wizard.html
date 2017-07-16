@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Caffelatte - Responsive HTML5 Template 1.0</title>
+    <meta name="description" content="Caffelatte Admin - Responsive HTML5 Template 1.0">
+    <meta name="author" content="suzAnnaKompaktor">
+
+    <link rel="import" href="inc/menu-items.html">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" />
+
+    <!-- Web Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/dist/css/caffelatte.min.css" />
+    <link rel="stylesheet" href="/dist/css/plugins/form-wizard.min.css" />
+
+  </head>
+
+  <body class="navbar-is-fixed-top" >
+    <div id="page">
+      <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="/" title="" rel="home" class="pull-left">
+                <img src="/dist/images/logo.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="icon icon-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <ul class="menu nav navbar-nav">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section role="main" class="main">
+
+      <div class="container container-main">
+        <div class="row">
+          <section class="col-xs-12">
+            <a id="main-content"></a>
+            <div class="mt-md">
+              <ul class="breadcrumb">
+                  <li><a href="/">Home</a></li>
+                  <li>Forms</li>
+                  <li>Wizards</li>
+              </ul>
+            </div>
+            <div class="title-section mb-sm clearfix">
+              <h1 class="page-title">Form Wizards</h1>
+            </div>
+
+            <div class="row">
+              <section class="panel form-wizard form-wizard-primary" id="wizard01">
+                <header class="panel-heading">
+                  <div class="panel-actions">
+                    <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                    <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                  </div>
+
+                  <h2 class="panel-title">Form Wizard</h2>
+                </header>
+                <div class="panel-body">
+                  <div class="wizard-tabs">
+                    <ul class="wizard-steps">
+                      <li class="active">
+                        <a href="#w1-account" data-toggle="tab" class="text-center">
+                          <span class="badge hidden-xs">1</span>
+                          Account
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#w1-profile" data-toggle="tab" class="text-center">
+                          <span class="badge hidden-xs">2</span>
+                          Profile
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#w1-confirm" data-toggle="tab" class="text-center">
+                          <span class="badge hidden-xs">3</span>
+                          Confirm
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <form class="form-horizontal" novalidate="novalidate">
+                    <div class="tab-content">
+                      <div id="w1-account" class="tab-pane active">
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="w1-username">Username</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control input-sm" name="username" id="w1-username" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="w1-password">Password</label>
+                          <div class="col-sm-8">
+                            <input type="password" class="form-control input-sm" name="password" id="w1-password" minlength="6" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w1-profile" class="tab-pane">
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="w1-first-name">First Name</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control input-sm" name="first-name" id="w1-first-name" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="w1-last-name">Last Name</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control input-sm" name="last-name" id="w1-last-name" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="w1-confirm" class="tab-pane">
+                        <div class="form-group">
+                          <label class="col-sm-4 control-label" for="w1-email">Email</label>
+                          <div class="col-sm-8">
+                            <input type="text" class="form-control input-sm" name="email" id="w1-email" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-2"></div>
+                          <div class="col-sm-10">
+                            <div class="checkbox-custom">
+                              <input type="checkbox" name="terms" id="w1-terms" required>
+                              <label for="w1-terms">I agree to the terms of service</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="panel-footer">
+                  <ul class="pager">
+                    <li class="previous disabled">
+                      <a><i class="icon icon-angle-left"></i> Previous</a>
+                    </li>
+                    <li class="finish hidden pull-right">
+                      <a>Finish</a>
+                    </li>
+                    <li class="next">
+                      <a>Next <i class="icon icon-angle-right"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </section>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <section class="panel form-wizard form-wizard-primary" id="wizard04">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Form Wizard</h2>
+                  </header>
+                  <div class="panel-body">
+                    <div class="wizard-progress wizard-progress-lg">
+                      <div class="steps-progress">
+                        <div class="progress-indicator"></div>
+                      </div>
+                      <ul class="wizard-steps">
+                        <li class="active">
+                          <a href="#w4-account" data-toggle="tab"><span>1</span>Account Info</a>
+                        </li>
+                        <li>
+                          <a href="#w4-profile" data-toggle="tab"><span>2</span>Profile Info</a>
+                        </li>
+                        <li>
+                          <a href="#w4-billing" data-toggle="tab"><span>3</span>Billing Info</a>
+                        </li>
+                        <li>
+                          <a href="#w4-confirm" data-toggle="tab"><span>4</span>Confirmation</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <form class="form-horizontal" novalidate="novalidate">
+                      <div class="tab-content">
+                        <div id="w4-account" class="tab-pane active">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label" for="w4-username">Username</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="username" id="w4-username" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label" for="w4-password">Password</label>
+                            <div class="col-sm-9">
+                              <input type="password" class="form-control" name="password" id="w4-password" required minlength="6">
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w4-profile" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label" for="w4-first-name">First Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="first-name" id="w4-first-name" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label" for="w4-last-name">Last Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="last-name" id="w4-last-name" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w4-billing" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w4-cc">Card Number</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="cc-number" id="w4-cc" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputSuccess">Expiration</label>
+                            <div class="col-sm-4">
+                              <select class="form-control" name="exp-month" required>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-4">
+                              <select class="form-control" name="exp-year" required>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w4-confirm" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label" for="w4-email">Email</label>
+                            <div class="col-sm-9">
+                              <input type="text" class="form-control" name="email" id="w4-email" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
+                              <div class="checkbox-custom">
+                                <input type="checkbox" name="terms" id="w4-terms" required>
+                                <label for="w4-terms">I agree to the terms of service</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="panel-footer">
+                    <ul class="pager">
+                      <li class="previous disabled">
+                        <a><i class="icon icon-angle-left"></i> Previous</a>
+                      </li>
+                      <li class="finish hidden pull-right">
+                        <a>Finish</a>
+                      </li>
+                      <li class="next">
+                        <a>Next <i class="icon icon-angle-right"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <section class="panel form-wizard form-wizard-info" id="wizard03">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Form Wizard</h2>
+                  </header>
+                  <div class="panel-body">
+                    <div class="wizard-progress">
+                      <div class="steps-progress">
+                        <div class="progress-indicator"></div>
+                      </div>
+                      <ul class="wizard-steps">
+                        <li class="active">
+                          <a href="#w3-account" data-toggle="tab"><span>1</span>Account Info</a>
+                        </li>
+                        <li>
+                          <a href="#w3-profile" data-toggle="tab"><span>2</span>Profile Info</a>
+                        </li>
+                        <li>
+                          <a href="#w3-billing" data-toggle="tab"><span>3</span>Billing Info</a>
+                        </li>
+                        <li>
+                          <a href="#w3-confirm" data-toggle="tab"><span>4</span>Confirmation</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <form class="form-horizontal" novalidate="novalidate">
+                      <div class="tab-content">
+                        <div id="w3-account" class="tab-pane active">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-username">Username</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control input-sm" name="username" id="w3-username" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-password">Password</label>
+                            <div class="col-sm-8">
+                              <input type="password" class="form-control input-sm" name="password" id="w3-password" minlength="6" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w3-profile" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-first-name">First Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control input-sm" name="first-name" id="w3-first-name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-last-name">Last Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control input-sm" name="last-name" id="w3-last-name">
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w3-billing" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-cc">Card Number</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control input-sm" name="cc-number" id="w3-cc" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputSuccess">Expiration</label>
+                            <div class="col-sm-4">
+                              <select class="form-control input-sm" name="exp-month" required>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-4">
+                              <select class="form-control input-sm" name="exp-year" required>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w3-confirm" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w3-email">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control input-sm" name="email" id="w3-email" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
+                              <div class="checkbox-custom">
+                                <input type="checkbox" name="terms" id="w3-terms" required>
+                                <label for="w3-terms">I agree to the terms of service</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="panel-footer">
+                    <ul class="pager">
+                      <li class="previous disabled">
+                        <a><i class="icon icon-angle-left"></i> Previous</a>
+                      </li>
+                      <li class="finish hidden pull-right">
+                        <a>Finish</a>
+                      </li>
+                      <li class="next">
+                        <a>Next <i class="icon icon-angle-right"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+              <div class="col-md-6">
+                <section class="panel form-wizard form-wizard-success" id="wizard05">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Form Wizard</h2>
+                  </header>
+                  <div class="panel-body">
+                    <div class="wizard-tabs hidden">
+                      <ul class="wizard-steps">
+                        <li class="active">
+                          <a href="#w5-account" data-toggle="tab"><span class="badge">1</span>Account Info</a>
+                        </li>
+                        <li>
+                          <a href="#w5-profile" data-toggle="tab"><span class="badge">2</span>Profile Info</a>
+                        </li>
+                        <li>
+                          <a href="#w5-billing" data-toggle="tab"><span class="badge">3</span>Billing Info</a>
+                        </li>
+                        <li>
+                          <a href="#w5-confirm" data-toggle="tab"><span class="badge">4</span>Confirmation</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="progress progress-striped progress-xl m-md light">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                        <span class="sr-only">60%</span>
+                      </div>
+                    </div>
+                    <form class="form-horizontal" novalidate="novalidate">
+                      <div class="tab-content">
+                        <div id="w5-account" class="tab-pane active">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-username">Username</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="username" id="w5-username" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-password">Password</label>
+                            <div class="col-sm-8">
+                              <input type="password" class="form-control" name="password" id="w5-password" minlength="2" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w5-profile" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-first-name">First Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="first-name" id="w5-first-name" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-last-name">Last Name</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="last-name" id="w5-last-name" required>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w5-billing" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-cc">Card Number</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="cc-number" id="w5-cc" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="inputSuccess">Expiration</label>
+                            <div class="col-sm-4">
+                              <select class="form-control" name="exp-month" required>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-4">
+                              <select class="form-control" name="exp-year" required>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="w5-confirm" class="tab-pane">
+                          <div class="form-group">
+                            <label class="col-sm-4 control-label" for="w5-email">Email</label>
+                            <div class="col-sm-8">
+                              <input type="text" class="form-control" name="email" id="w5-email" required>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="col-sm-3"></div>
+                            <div class="col-sm-9">
+                              <div class="checkbox-custom">
+                                <input type="checkbox" name="terms" id="w5-terms" required>
+                                <label for="w5-terms">I agree to the terms of service</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="panel-footer">
+                    <ul class="pager">
+                      <li class="previous disabled">
+                        <a><i class="icon icon-angle-left"></i> Previous</a>
+                      </li>
+                      <li class="finish hidden pull-right">
+                        <a>Finish</a>
+                      </li>
+                      <li class="next">
+                        <a>Next <i class="icon icon-angle-right"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </section>
+              </div>
+            </div>
+
+          <!-- end content -->
+          </section>
+        </div>
+       </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>First col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Second col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Third col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- eof .footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              Copyright information
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- eof #page -->
+
+  <a href="#" rel="scroll-to-top" class="scroll-to-top">
+    <i class="icon icon-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Vendor -->
+  <script src="/dist/vendor/jquery/jquery.min.js"></script>
+  <script src="/dist/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/dist/vendor/jquery-placeholder/jquery-placeholder.min.js"></script>
+  <script src="/dist/vendor/select2/select2.min.js"></script>
+  <script src="/dist/vendor/jquery-validation/jquery-validate.min.js"></script>
+  <script src="/dist/vendor/bootstrap-wizard/bootstrap-wizard.min.js"></script>
+
+   <script type="text/javascript">
+    var link = document.querySelector('link[rel="import"]');
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+    document.querySelector('.navbar-nav').appendChild(clone);
+  </script>
+  <script src="inc/root.js"></script>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="/dist/js/caffelatte.js"></script>
+  <script src="/dist/js/plugins/all.js"></script>
+  <script src="/dist/js/init.min.js"></script>
+
+  <!-- Examples -->
+  <script src="./js/forms.wizard.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,10 @@
+/**
+ * @file
+ * widgets/carousel.less.
+ */
+.panel.widget .owl-carousel {
+  margin-top: -15px;
+}
+.panel.widget .owl-carousel .item {
+  margin: 0;
+}

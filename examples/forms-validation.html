@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Caffelatte - Responsive HTML5 Template 1.0</title>
+    <meta name="description" content="Caffelatte Admin - Responsive HTML5 Template 1.0">
+    <meta name="author" content="suzAnnaKompaktor">
+
+    <link rel="import" href="inc/menu-items.html">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" />
+
+    <!-- Web Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/dist/css/caffelatte.min.css" />
+
+  </head>
+
+  <body class="navbar-is-fixed-top" >
+    <div id="page">
+      <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="/" title="" rel="home" class="pull-left">
+                <img src="/dist/images/logo.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="icon icon-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <ul class="menu nav navbar-nav">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section role="main" class="main">
+
+      <div class="container container-main">
+        <div class="row">
+          <section class="col-xs-12">
+            <a id="main-content"></a>
+            <div class="mt-md">
+              <ul class="breadcrumb">
+                  <li><a href="/">Home</a></li>
+                  <li>Forms</li>
+                  <li>Validation</li>
+              </ul>
+            </div>
+            <div class="title-section mb-sm clearfix">
+              <h1 class="page-title">Form Validation</h1>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6">
+                <form id="form" action="forms-validation.html" class="form-horizontal">
+                  <section class="panel">
+                    <header class="panel-heading">
+                      <div class="panel-actions">
+                        <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                        <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                      </div>
+
+                      <h2 class="panel-title">Basic Form Validation</h2>
+                      <p class="panel-subtitle">
+                        Basic validation will display a label with the error after the form control.
+                      </p>
+                    </header>
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Name <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="text" name="fullname" class="form-control" placeholder="eg.: John Doe" required/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Email <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="email" name="email" class="form-control" placeholder="eg.: email@email.com" required/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Web</label>
+                        <div class="col-sm-9">
+                          <input type="url" name="web" class="form-control" placeholder="eg.: http://johndoe.com" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Comment<span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <textarea name="comment" rows="5" class="form-control" placeholder="Additional comments" required></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Cats are <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <div class="radio-custom radio-primary">
+                            <input id="best" name="cats" type="radio" value="the-best" required />
+                            <label for="best">the best</label>
+                          </div>
+                          <div class="radio-custom radio-primary">
+                            <input id="evil" name="cats" type="radio" value="evil" />
+                            <label for="evil">evil</label>
+                          </div>
+                          <div class="radio-custom radio-primary">
+                            <input id="wierd" name="cats" type="radio" value="wierd" />
+                            <label for="wierd">wierd</label>
+                          </div>
+                          <label class="error" for="cats"></label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">I can has <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <div class="checkbox-custom chekbox-primary">
+                            <input id="has-cheezburger" value="cheezburger" type="checkbox" name="has[]" required />
+                            <label for="has-cheezburger">cheezburger</label>
+                          </div>
+                          <div class="checkbox-custom chekbox-primary">
+                            <input id="has-pizza" value="website" type="checkbox" name="has[]" />
+                            <label for="has-pizza">pizza</label>
+                          </div>
+                          <div class="checkbox-custom chekbox-primary">
+                            <input id="has-kebab" value="kebab" type="checkbox" name="has[]" />
+                            <label for="has-kebab">kebab</label>
+                          </div>
+                          <label class="error" for="has[]"></label>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Browsers</label>
+                        <div class="col-sm-9">
+                          <select id="browsers" name="browsers" title="Please select at least one browser" class="form-control" size="5" multiple="multiple" required>
+                            <option value="chrome">Chrome / Safari</option>
+                            <option value="ff">Firefox</option>
+                            <option value="ie">Internet Explorer</option>
+                            <option value="opera">Opera</option>
+                          </select>
+                          <label class="error" for="browsers"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="panel-footer">
+                      <div class="row">
+                        <div class="col-sm-9 col-sm-offset-3">
+                          <button class="btn btn-primary">Submit</button>
+                          <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                      </div>
+                    </footer>
+                  </section>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <form id="formSummary" action="forms-validation.html" class="form-horizontal">
+                  <section class="panel">
+                    <header class="panel-heading">
+                      <div class="panel-actions">
+                        <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                        <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                      </div>
+
+                      <h2 class="panel-title">Validation Summary</h2>
+                      <p class="panel-subtitle">
+                        Validation summary will display an error list above the form.
+                      </p>
+                    </header>
+                    <div class="panel-body">
+                      <div class="messages error" style="display:none;">
+                        <ul></ul>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Name <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="text" name="fullname" class="form-control" title="Please enter a name." placeholder="eg.: John Doe" required/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Email <span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <input type="email" name="email" class="form-control" title="Please enter an email address." placeholder="eg.: email@email.com" required/>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Web</label>
+                        <div class="col-sm-9">
+                          <input type="url" name="web" class="form-control" title="Please enter a valid url." placeholder="eg.: http://johndoe.com" />
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Comment<span class="required">*</span></label>
+                        <div class="col-sm-9">
+                          <textarea name="comment" rows="5" class="form-control" title="Your comment is too short." placeholder="Additional comments" required></textarea>
+                        </div>
+                      </div>
+                      <div class="form-group">
+                        <label class="col-sm-3 control-label">Browsers</label>
+                        <div class="col-sm-9">
+                          <select id="browsers" name="browsers" title="Please select at least one browser" class="form-control" size="5" multiple="multiple" required>
+                            <option value="chrome">Chrome / Safari</option>
+                            <option value="ff">Firefox</option>
+                            <option value="ie">Internet Explorer</option>
+                            <option value="opera">Opera</option>
+                          </select>
+                          <label class="error" for="browsers"></label>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="panel-footer">
+                      <div class="row">
+                        <div class="col-sm-9 col-sm-offset-3">
+                          <button class="btn btn-primary">Submit</button>
+                          <button type="reset" class="btn btn-default">Reset</button>
+                        </div>
+                      </div>
+                    </footer>
+                  </section>
+                </form>
+              </div>
+            </div>
+
+          <!-- end content -->
+          </section>
+        </div>
+       </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>First col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Second col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Third col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- eof .footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              Copyright information
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- eof #page -->
+
+  <a href="#" rel="scroll-to-top" class="scroll-to-top">
+    <i class="icon icon-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Vendor -->
+  <script src="/dist/vendor/jquery/jquery.min.js"></script>
+  <script src="/dist/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/dist/vendor/jquery-placeholder/jquery-placeholder.min.js"></script>
+  <script src="/dist/vendor/select2/select2.min.js"></script>
+  <script src="/dist/vendor/jquery-validation/jquery-validate.min.js"></script>
+
+   <script type="text/javascript">
+    var link = document.querySelector('link[rel="import"]');
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+    document.querySelector('.navbar-nav').appendChild(clone);
+  </script>
+  <script src="inc/root.js"></script>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="/dist/js/caffelatte.js"></script>
+  <script src="/dist/js/plugins/all.js"></script>
+  <script src="/dist/js/init.min.js"></script>
+
+  <!-- Examples -->
+  <script type="text/javascript">
+    (function($) {
+      $("#form").validate({
+        highlight: function(element) {
+          $(element).closest('.form-group').removeClass('has-success').addClass('has-error');
+        },
+        success: function(element) {
+          $(element).closest('.form-group').removeClass('has-error');
+        }
+      });
+
+      // validation summary
+      var $formSummary = $("#formSummary");
+
+      $formSummary.validate({
+        errorContainer: $formSummary.find( 'div.messages.error' ),
+        errorLabelContainer: $formSummary.find( 'div.messages.error ul' ),
+        wrapper: "li"
+      });
+
+    })(jQuery);
+  </script>
+
+  </body>
+</html>

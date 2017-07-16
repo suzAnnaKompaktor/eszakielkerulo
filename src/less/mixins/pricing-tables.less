@@ -1,0 +1,24 @@
+/**
+ * @file
+ * mixins/pricing-tables.less.
+ */
+
+.pricing-table-variant(@color) {
+
+  h3 {
+  color: @inverse-text-color;
+    background-color:@color;
+    border-color:spin(darken(@color, 8%), -10);
+
+    span {
+      @icon-color: spin(darken(@color, 8%), -3);
+      background: @icon-color;
+      border-color:spin(darken(@icon-color, 8%), -10);
+
+      strong {
+        @darken: darken(@icon-color, 8%);
+        .box-shadow(inset @shadow-position 10px 10px rgba(red(@darken), green(@darken), blue(@darken), 0.8));
+      }
+    }
+  }
+}

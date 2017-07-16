@@ -1,0 +1,25 @@
+{
+  "name": "caffelatte",
+  "authors": [
+    "suzAnnaKompaktor <kompaktorzsu@gmail.com>"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests",
+    "sites"
+  ],
+  "devDependencies": {
+    "jquery": "1.11",
+    "bootstrap": "^3.3.6",
+    "font-awesome-less": "^0.1.0",
+    "animate-css": "animate-css#^3.5.1",
+    "magnific-popup": "^1.1.0",
+    "select2": "^4.0.1",
+    "owl.carousel": "owl-carousel2#^2.0.0-beta.3",
+    "bootstrap-datepicker": "^1.6.0"
+  }
+}

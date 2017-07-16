@@ -1,0 +1,24 @@
+/**
+ * @file
+ * mixins/backgrounds.less.
+ *
+ * Add backgrounds mixins.
+ */
+
+.bg-variant-styled(@color) {
+   background-color: @color;
+   @darken: darken(@color, 5%);
+  .inner-shadow(0, 0, 20px, rgba(red(@darken), green(@darken), blue(@darken), 0.8));
+  .inner-shadow(0, 0, 2rem, rgba(red(@darken), green(@darken), blue(@darken), 0.8));
+}
+
+.bg-variant-styled-alt(@color) {
+  @darken: darken(@color, 5%);
+  #gradient.vertical(rgba(red(@darken), green(@darken), blue(@darken), 0.8); @color; 0%; 30%);
+}
+
+.bg-variant-darken(@color) {
+  background: darken(@color, 3%);
+  .unset-shadow;
+  .text-inverse;
+}

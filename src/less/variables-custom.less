@@ -1,0 +1,194 @@
+/*---------------------------------
+  CUSTOM SPACE DEFINITIONS
+-----------------------------------*/
+@default-space:         15px; // (@grid-gutter-width / 2)
+@double-space:          @default-space * 2;
+@triple-space:          @default-space * 3;
+@half-space:            round(@default-space / 2);
+@third-space:           round(@default-space / 3);
+@quarter-space:         round(@default-space / 4);
+@arrow-size:            @half-space;
+
+/*---------------------------------
+  CUSTOM TYPO DEFINITIONS
+-----------------------------------*/
+@text-xs:                0.8em;
+@text-sm:                0.9em;
+@text-lg:                1.1em;
+@text-xl:                1.2em;
+@text-bold:              700;
+@text-semi-bold:         600;
+
+/*---------------------------------
+  CUSTOM SHADOWS DEFINITIONS
+-----------------------------------*/
+@light-shadow:           #ededed;
+@dark-shadow:            rgba(0, 0, 0, 0.1);
+@text-shadow:            #ffffff;
+
+@shadow-position:        0;
+@shadow-distance:        1px;
+@shadow-blur:            2px;
+
+@strong-shadow-position:        0;
+@strong-shadow-distance:        4px;
+@strong-shadow-blur:            4px;
+
+@textshadow-position:     0;
+@textshadow-distance:     1px;
+@textshadow-blur:         0;
+
+@form-control-shadow:     inset 0 2px 3px rgba(red(@light-shadow), green(@light-shadow), blue(@light-shadow), 0.7);
+
+/*---------------------------------
+  CUSTOM COLOR DEFINITIONS
+-----------------------------------*/
+@brand-secondary:                 @brand-info;
+@text-color-dark:                 #000000;
+@inverse-text-color:              #fff;
+@inverse-text-highlight-color:    darken(@inverse-text-color, 10%); /* #E6E6E6 */
+@link-secondary-color:            @brand-secondary;
+@link-secondary-hover-color:      lighten(@link-secondary-color, 15%); /* #8EBEEB */
+
+/* Light background (header) */
+@light-bg:              lighten(@body-bg, 3%); /* #fff */
+/* For example: sidebar */
+@dark-bg:               darken(@body-bg, 3%); /* #efefef */
+/* For example content header */
+@darker-bg:             darken(@body-bg, 8%); /* #e3e3e3 */
+/* Top section */
+@inverse-bg:            #5C5054;
+@dark-inverse-bg:       darken(@inverse-bg, 5%);
+@light-inverse-bg:      lighten(@dark-inverse-bg, 20%); /* #7E8484 */
+
+/* Base border color */
+@border-color:          #e0e0e0;
+/* Top section */
+@border-color-inverse:  #1d1d1d;
+/* Menu bar */
+@border-color-light:    lighten(@border-color, 3%);
+/*  Tabs, Content header */
+@border-color-dark:     darken(@border-color, 5%);
+ /* Forms, Secondary tabs */
+@border-color-darker:   darken(@border-color, 10%);
+
+@border-size: 1px;
+@border-style: solid;
+
+@color-facebook:         #3B5998;
+@color-twitter:          #55ACEE;
+@color-googleplus:       #db4437;
+@color-github:           #444444;
+@color-linkedin:         #0077B5;
+@color-dropbox:          #007EE5;
+@color-yahoo:            #7B0099;
+@color-youtube:          #e52d27;
+@color-rss:              #FF6600;
+@color-instagram:        #3f729b;
+@color-pinterest:        #bd081c;
+@color-vimeo:            #1AB7EA;
+
+/*---------------------------------
+  INPUT
+-----------------------------------*/
+@input-bg-inverse:                       lighten(@dark-inverse-bg, 15%);
+@input-color-inverse:                    @inverse-text-color;
+@input-border-inverse:                   lighten(@border-color-inverse, 10%);
+
+/*---------------------------------
+  BUTTONS
+-----------------------------------*/
+@btn-inverse-color:              @inverse-text-color;
+@btn-inverse-bg:                 @inverse-bg;
+@btn-inverse-border:             lighten(@border-color-inverse, 10%);
+
+@btn-default-grad-light:         lighten(@gray-lighter, 16%);
+@btn-default-grad-dark:          @gray-lighter;
+@btn-primary-grad-light:         lighten(@btn-primary-bg,8%);
+@btn-primary-grad-dark:          darken(@btn-primary-bg,8%);
+@btn-success-grad-light:         lighten(@btn-success-bg,8%);
+@btn-success-grad-dark:          darken(@btn-success-bg,8%);
+@btn-info-grad-light:            lighten(@btn-info-bg,8%);
+@btn-info-grad-dark:             darken(@btn-info-bg,8%);
+@btn-warning-grad-light:         lighten(@btn-warning-bg,10%);
+@btn-warning-grad-dark:          darken(@btn-warning-bg,6%);
+@btn-danger-grad-light:          lighten(@btn-danger-bg,8%);
+@btn-danger-grad-dark:           darken(@btn-danger-bg,8%);
+@btn-inverse-grad-light:         @inverse-bg;
+@btn-inverse-grad-dark:          darken(@inverse-bg,16%);
+
+/*---------------------------------
+  SCREEN SIZES
+-----------------------------------*/
+@screen-xl:              1600px;
+@screen-xl-min:          @screen-xl;
+
+@screen-lg-max:					 (@screen-xl-min - 1);
+
+/*---------------------------------
+  LAYOUT
+-----------------------------------*/
+@navbar-height-small: 60px;
+@navbar-padding-vertical-small: 20px;
+@footer-height: 40px;
+
+/*---------------------------------
+  Magnific Popup
+-----------------------------------*/
+// overlay
+@mfp-overlay-color:                   #0b0b0b;                    // Color of overlay screen
+@mfp-overlay-opacity:                 0.8;                        // Opacity of overlay screen
+@mfp-shadow:                          0 0 8px rgba(0, 0, 0, 0.6); // Shadow on image or iframe
+
+// spacing
+@mfp-popup-padding-left:              8px;                        // Padding from left and from right side
+@mfp-popup-padding-left-mobile:       6px;                        // Same as above, but is applied when width of window is less than 800px
+
+@mfp-z-index-base:                    1040;                       // Base z-index of popup
+
+// controls
+@mfp-controls-opacity:                0.65;                       // Opacity of controls
+@mfp-controls-color:                  #FFF;                       // Color of controls
+@mfp-controls-border-color:           #3F3F3F;                    // Border color of controls
+@mfp-inner-close-icon-color:          @text-color;                       // Color of close button when inside
+@mfp-controls-text-color:             #CCC;                       // Color of preloader and "1 of X" indicator
+@mfp-controls-text-color-hover:       #FFF;                       // Hover color of preloader and "1 of X" indicator
+
+// Iframe-type options
+@mfp-iframe-padding-top:              40px;                       // Iframe padding top
+@mfp-iframe-background:               #FFF;                       // Background color of iframes
+@mfp-iframe-max-width:                900px;                      // Maximum width of iframes
+@mfp-iframe-ratio:                    9/16;                       // Ratio of iframe (9/16 = widescreen, 3/4 = standard, etc.)
+
+// Image-type options
+@mfp-image-background:                #444;
+@mfp-image-padding-top:               40px;                       // Image padding top
+@mfp-image-padding-bottom:            40px;                       // Image padding bottom
+@mfp-include-mobile-layout-for-image: true;                       // Removes paddings from top and bottom
+
+// Image caption options
+@mfp-caption-title-color:             #F3F3F3;                    // Caption title color
+@mfp-caption-subtitle-color:          #BDBDBD;                    // Caption subtitle color
+
+// A11y
+@mfp-use-visuallyhidden:              false;                      // Hide content from browsers, but make it available for screen readers
+
+/*---------------------------------
+  Owl Carousel
+-----------------------------------*/
+@owl-nav-color:               @inverse-text-color;
+@owl-nav-color-hover:         @inverse-text-color;
+@owl-nav-font-size:           @font-size-base;
+@owl-nav-rounded:             3px;
+@owl-nav-margin:              5px;
+@owl-nav-padding:             4px 7px;
+@owl-nav-background:          @gray-light;
+@owl-nav-background-hover:    @gray;
+@owl-nav-disabled-opacity:    0.5;
+
+@owl-dot-width:               10px;
+@owl-dot-height:              10px;
+@owl-dot-rounded:             30px;
+@owl-dot-margin:              5px 7px;
+@owl-dot-background:          @gray-light;
+@owl-dot-background-active:   @gray;

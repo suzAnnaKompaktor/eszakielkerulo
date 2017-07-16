@@ -1,0 +1,10 @@
+/**
+ * @file
+ * components/breadcrumbs.less.
+ */
+.breadcrumb {
+  margin: 0;
+  font-size: 0.9em;
+  text-align: right;
+  background: transparent;
+}

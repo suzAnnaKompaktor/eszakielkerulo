@@ -1,0 +1,214 @@
+/**
+ * @file
+ * base/misc-html.less.
+ */
+
+*{
+  outline: none;
+  margin:0;
+  padding:0;
+}
+
+html, body{width:100%;}
+body{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+body.navbar-is-fixed-top {
+  padding-top: @navbar-height;
+}
+
+a{
+  .highlighten;
+  text-decoration:none;
+  cursor:pointer;
+
+  &:hover,
+  &:focus{
+    text-decoration:none;
+  }
+}
+
+ul, ol {margin-bottom: 0; padding-left: @default-space + 2;}
+hr{
+  margin-bottom:
+  @default-space;
+  margin-top: @default-space;
+  &.row {width: 100%;}
+}
+label{font-weight:normal;}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  .text-heading;
+}
+
+h1, h2, h3, .h1, .h2, .h3{
+  font-weight:300;
+}
+
+h4, h5, h6, .h4, .h5, .h6{
+  font-weight: 500;
+}
+
+.lead {
+  .text-lg;
+  font-weight: 600;
+  line-height: 1.4;
+
+  @media (min-width: @screen-sm-min) {
+    .text-xl;
+  }
+}
+
+blockquote {
+  border-width:4px;
+
+  &.primary{border-color:@brand-primary;}
+  &.success{border-color:@brand-success;}
+  &.info{border-color:@brand-info;}
+  &.warning{border-color:@brand-warning;}
+  &.danger{border-color:@brand-danger;}
+  &.dark{border-color:@border-color-inverse;}
+}
+
+cite {
+  color:@gray-light;
+}
+
+small,
+.small {
+  font-size: @font-size-small;
+}
+
+strong,
+.strong{
+  .text-semi-bold;
+}
+
+pre,
+.content-body pre.prettyprint{
+  .border;
+  padding: @half-space;
+  word-break: keep-all;
+  word-wrap: normal;
+}
+
+.dd {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: @font-size-base;
+  line-height: @line-height-large;
+}
+
+.dd-list {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.dd-list .dd-list {
+  padding-left: @double-space;
+}
+
+.dd-collapsed .dd-list {
+  display: none;
+}
+
+.dd-item, .dd-empty, .dd-placeholder {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  min-height: @line-height-large;
+  font-size: @font-size-base;
+  line-height: @line-height-large;
+}
+
+.dd-handle {
+  display: block;
+  height: 34px;
+  margin: @third-space 0;
+  padding: 6px 10px;
+  color: @text-color;
+  text-decoration: none;
+  .text-semi-bold;
+  .border();
+  background: @dark-bg;
+}
+
+.dd-handle:hover {
+  color: @link-color;
+  background: @light-bg;
+}
+
+.dd-item > button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  float: left;
+  width: 25px;
+  height: 20px;
+  margin: 7px 0;
+  padding: 0;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  line-height: 1;
+  text-align: center;
+  font-weight: bold;
+}
+
+.dd-item > button:before {
+  content: '+';
+  display: block;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+}
+
+.dd-item > button[data-action="collapse"]:before {
+  content: '-';
+}
+
+.dd-placeholder {
+  margin: @third-space 0;
+  padding: 0;
+  min-height: @double-space;
+  .bg-light;
+  border: 1px dashed @brand-primary;
+}
+
+.dd-empty {
+  margin: @third-space 0;
+  padding: 0;
+  min-height: @double-space;
+  border: 1px dashed @border-color-dark;
+  min-height: 100px;
+  background-color: #e5e5e5;
+}
+
+.dd-dragel {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.dd-dragel > .dd-item .dd-handle {
+  margin-top: 0;
+}
+
+.dd-dragel .dd-handle {
+  .strong-shadow;
+}

@@ -1,0 +1,68 @@
+/**
+ * @file
+ * components/datatables.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/panels.less";
+@import (reference) "../mixins/icon.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.dataTables_length .select2-container{
+  width: 75px;
+  display: inline-block;
+}
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_desc {
+  background: none;
+  position: relative;
+
+  &:after{
+    position: absolute;
+    right: @third-space;
+  }
+}
+
+table.dataTable thead .sorting_asc {
+  .add-icon(@fa-var-sort-asc, after);
+}
+
+table.dataTable thead .sorting_desc {
+  .add-icon(@fa-var-sort-desc, after);
+}
+
+table.dataTable thead .sorting {
+  .add-icon(@fa-var-unsorted, after);
+}
+
+.DTTT_container{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle; // match .btn alignment given font-size hack above
+  > .btn {
+    position: relative;
+    float: left;
+    // Bring the "active" button to the front
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      z-index: 2;
+    }
+    &:focus {
+      // Remove focus outline when dropdown JS adds it after closing the menu
+      outline: 0;
+    }
+  }
+}

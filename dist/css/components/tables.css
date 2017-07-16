@@ -1,0 +1,352 @@
+/**
+ * @file
+ * elements/tables.less.
+ */
+.table {
+  background-color: #ffffff;
+}
+.table > thead {
+  border-top: 1px solid #e0e0e0;
+}
+.table > thead > tr > td.primary,
+.table > tbody > tr > td.primary,
+.table > tfoot > tr > td.primary,
+.table > thead > tr > th.primary,
+.table > tbody > tr > th.primary,
+.table > tfoot > tr > th.primary,
+.table > thead > tr.primary > td,
+.table > tbody > tr.primary > td,
+.table > tfoot > tr.primary > td,
+.table > thead > tr.primary > th,
+.table > tbody > tr.primary > th,
+.table > tfoot > tr.primary > th {
+  background-color: #c3fa62;
+  color: #425503;
+}
+.table > thead > tr > td.primary a,
+.table > tbody > tr > td.primary a,
+.table > tfoot > tr > td.primary a,
+.table > thead > tr > th.primary a,
+.table > tbody > tr > th.primary a,
+.table > tfoot > tr > th.primary a,
+.table > thead > tr.primary > td a,
+.table > tbody > tr.primary > td a,
+.table > tfoot > tr.primary > td a,
+.table > thead > tr.primary > th a,
+.table > tbody > tr.primary > th a,
+.table > tfoot > tr.primary > th a {
+  color: #1c2401;
+  font-weight: 700;
+}
+.table > thead > tr > td.primary a:hover,
+.table > tbody > tr > td.primary a:hover,
+.table > tfoot > tr > td.primary a:hover,
+.table > thead > tr > th.primary a:hover,
+.table > tbody > tr > th.primary a:hover,
+.table > tfoot > tr > th.primary a:hover,
+.table > thead > tr.primary > td a:hover,
+.table > tbody > tr.primary > td a:hover,
+.table > tfoot > tr.primary > td a:hover,
+.table > thead > tr.primary > th a:hover,
+.table > tbody > tr.primary > th a:hover,
+.table > tfoot > tr.primary > th a:hover,
+.table > thead > tr > td.primary a:focus,
+.table > tbody > tr > td.primary a:focus,
+.table > tfoot > tr > td.primary a:focus,
+.table > thead > tr > th.primary a:focus,
+.table > tbody > tr > th.primary a:focus,
+.table > tfoot > tr > th.primary a:focus,
+.table > thead > tr.primary > td a:focus,
+.table > tbody > tr.primary > td a:focus,
+.table > tfoot > tr.primary > td a:focus,
+.table > thead > tr.primary > th a:focus,
+.table > tbody > tr.primary > th a:focus,
+.table > tfoot > tr.primary > th a:focus {
+  color: #425503;
+}
+.table-hover > tbody > tr > td.primary:hover,
+.table-hover > tbody > tr > th.primary:hover,
+.table-hover > tbody > tr.primary:hover > td,
+.table-hover > tbody > tr:hover > .primary,
+.table-hover > tbody > tr.primary:hover > th {
+  background-color: #b9f94a;
+}
+.table > thead > tr > td.info,
+.table > tbody > tr > td.info,
+.table > tfoot > tr > td.info,
+.table > thead > tr > th.info,
+.table > tbody > tr > th.info,
+.table > tfoot > tr > th.info,
+.table > thead > tr.info > td,
+.table > tbody > tr.info > td,
+.table > tfoot > tr.info > td,
+.table > thead > tr.info > th,
+.table > tbody > tr.info > th,
+.table > tfoot > tr.info > th {
+  background-color: #8ab3f8;
+  color: #0a549d;
+}
+.table > thead > tr > td.info a,
+.table > tbody > tr > td.info a,
+.table > tfoot > tr > td.info a,
+.table > thead > tr > th.info a,
+.table > tbody > tr > th.info a,
+.table > tfoot > tr > th.info a,
+.table > thead > tr.info > td a,
+.table > tbody > tr.info > td a,
+.table > tfoot > tr.info > td a,
+.table > thead > tr.info > th a,
+.table > tbody > tr.info > th a,
+.table > tfoot > tr.info > th a {
+  color: #073a6d;
+  font-weight: 700;
+}
+.table > thead > tr > td.info a:hover,
+.table > tbody > tr > td.info a:hover,
+.table > tfoot > tr > td.info a:hover,
+.table > thead > tr > th.info a:hover,
+.table > tbody > tr > th.info a:hover,
+.table > tfoot > tr > th.info a:hover,
+.table > thead > tr.info > td a:hover,
+.table > tbody > tr.info > td a:hover,
+.table > tfoot > tr.info > td a:hover,
+.table > thead > tr.info > th a:hover,
+.table > tbody > tr.info > th a:hover,
+.table > tfoot > tr.info > th a:hover,
+.table > thead > tr > td.info a:focus,
+.table > tbody > tr > td.info a:focus,
+.table > tfoot > tr > td.info a:focus,
+.table > thead > tr > th.info a:focus,
+.table > tbody > tr > th.info a:focus,
+.table > tfoot > tr > th.info a:focus,
+.table > thead > tr.info > td a:focus,
+.table > tbody > tr.info > td a:focus,
+.table > tfoot > tr.info > td a:focus,
+.table > thead > tr.info > th a:focus,
+.table > tbody > tr.info > th a:focus,
+.table > tfoot > tr.info > th a:focus {
+  color: #0a549d;
+}
+.table-hover > tbody > tr > td.info:hover,
+.table-hover > tbody > tr > th.info:hover,
+.table-hover > tbody > tr.info:hover > td,
+.table-hover > tbody > tr:hover > .info,
+.table-hover > tbody > tr.info:hover > th {
+  background-color: #72a3f6;
+}
+.table > thead > tr > td.success,
+.table > tbody > tr > td.success,
+.table > tfoot > tr > td.success,
+.table > thead > tr > th.success,
+.table > tbody > tr > th.success,
+.table > tfoot > tr > th.success,
+.table > thead > tr.success > td,
+.table > tbody > tr.success > td,
+.table > tfoot > tr.success > td,
+.table > thead > tr.success > th,
+.table > tbody > tr.success > th,
+.table > tfoot > tr.success > th {
+  background-color: #f8fbf3;
+  color: #839c2f;
+}
+.table > thead > tr > td.success a,
+.table > tbody > tr > td.success a,
+.table > tfoot > tr > td.success a,
+.table > thead > tr > th.success a,
+.table > tbody > tr > th.success a,
+.table > tfoot > tr > th.success a,
+.table > thead > tr.success > td a,
+.table > tbody > tr.success > td a,
+.table > tfoot > tr.success > td a,
+.table > thead > tr.success > th a,
+.table > tbody > tr.success > th a,
+.table > tfoot > tr.success > th a {
+  color: #627524;
+  font-weight: 700;
+}
+.table > thead > tr > td.success a:hover,
+.table > tbody > tr > td.success a:hover,
+.table > tfoot > tr > td.success a:hover,
+.table > thead > tr > th.success a:hover,
+.table > tbody > tr > th.success a:hover,
+.table > tfoot > tr > th.success a:hover,
+.table > thead > tr.success > td a:hover,
+.table > tbody > tr.success > td a:hover,
+.table > tfoot > tr.success > td a:hover,
+.table > thead > tr.success > th a:hover,
+.table > tbody > tr.success > th a:hover,
+.table > tfoot > tr.success > th a:hover,
+.table > thead > tr > td.success a:focus,
+.table > tbody > tr > td.success a:focus,
+.table > tfoot > tr > td.success a:focus,
+.table > thead > tr > th.success a:focus,
+.table > tbody > tr > th.success a:focus,
+.table > tfoot > tr > th.success a:focus,
+.table > thead > tr.success > td a:focus,
+.table > tbody > tr.success > td a:focus,
+.table > tfoot > tr.success > td a:focus,
+.table > thead > tr.success > th a:focus,
+.table > tbody > tr.success > th a:focus,
+.table > tfoot > tr.success > th a:focus {
+  color: #839c2f;
+}
+.table-hover > tbody > tr > td.success:hover,
+.table-hover > tbody > tr > th.success:hover,
+.table-hover > tbody > tr.success:hover > td,
+.table-hover > tbody > tr:hover > .success,
+.table-hover > tbody > tr.success:hover > th {
+  background-color: #edf5df;
+}
+.table > thead > tr > td.warning,
+.table > tbody > tr > td.warning,
+.table > tfoot > tr > td.warning,
+.table > thead > tr > th.warning,
+.table > tbody > tr > th.warning,
+.table > tfoot > tr > th.warning,
+.table > thead > tr.warning > td,
+.table > tbody > tr.warning > td,
+.table > tfoot > tr.warning > td,
+.table > thead > tr.warning > th,
+.table > tbody > tr.warning > th,
+.table > tfoot > tr.warning > th {
+  background-color: #eeecc6;
+  color: #97912d;
+}
+.table > thead > tr > td.warning a,
+.table > tbody > tr > td.warning a,
+.table > tfoot > tr > td.warning a,
+.table > thead > tr > th.warning a,
+.table > tbody > tr > th.warning a,
+.table > tfoot > tr > th.warning a,
+.table > thead > tr.warning > td a,
+.table > tbody > tr.warning > td a,
+.table > tfoot > tr.warning > td a,
+.table > thead > tr.warning > th a,
+.table > tbody > tr.warning > th a,
+.table > tfoot > tr.warning > th a {
+  color: #706b21;
+  font-weight: 700;
+}
+.table > thead > tr > td.warning a:hover,
+.table > tbody > tr > td.warning a:hover,
+.table > tfoot > tr > td.warning a:hover,
+.table > thead > tr > th.warning a:hover,
+.table > tbody > tr > th.warning a:hover,
+.table > tfoot > tr > th.warning a:hover,
+.table > thead > tr.warning > td a:hover,
+.table > tbody > tr.warning > td a:hover,
+.table > tfoot > tr.warning > td a:hover,
+.table > thead > tr.warning > th a:hover,
+.table > tbody > tr.warning > th a:hover,
+.table > tfoot > tr.warning > th a:hover,
+.table > thead > tr > td.warning a:focus,
+.table > tbody > tr > td.warning a:focus,
+.table > tfoot > tr > td.warning a:focus,
+.table > thead > tr > th.warning a:focus,
+.table > tbody > tr > th.warning a:focus,
+.table > tfoot > tr > th.warning a:focus,
+.table > thead > tr.warning > td a:focus,
+.table > tbody > tr.warning > td a:focus,
+.table > tfoot > tr.warning > td a:focus,
+.table > thead > tr.warning > th a:focus,
+.table > tbody > tr.warning > th a:focus,
+.table > tfoot > tr.warning > th a:focus {
+  color: #97912d;
+}
+.table-hover > tbody > tr > td.warning:hover,
+.table-hover > tbody > tr > th.warning:hover,
+.table-hover > tbody > tr.warning:hover > td,
+.table-hover > tbody > tr:hover > .warning,
+.table-hover > tbody > tr.warning:hover > th {
+  background-color: #e8e5b2;
+}
+.table > thead > tr > td.danger,
+.table > tbody > tr > td.danger,
+.table > tfoot > tr > td.danger,
+.table > thead > tr > th.danger,
+.table > tbody > tr > th.danger,
+.table > tfoot > tr > th.danger,
+.table > thead > tr.danger > td,
+.table > tbody > tr.danger > td,
+.table > tfoot > tr.danger > td,
+.table > thead > tr.danger > th,
+.table > tbody > tr.danger > th,
+.table > tfoot > tr.danger > th {
+  background-color: #ffd6d6;
+  color: #A30000;
+}
+.table > thead > tr > td.danger a,
+.table > tbody > tr > td.danger a,
+.table > tfoot > tr > td.danger a,
+.table > thead > tr > th.danger a,
+.table > tbody > tr > th.danger a,
+.table > tfoot > tr > th.danger a,
+.table > thead > tr.danger > td a,
+.table > tbody > tr.danger > td a,
+.table > tfoot > tr.danger > td a,
+.table > thead > tr.danger > th a,
+.table > tbody > tr.danger > th a,
+.table > tfoot > tr.danger > th a {
+  color: #700000;
+  font-weight: 700;
+}
+.table > thead > tr > td.danger a:hover,
+.table > tbody > tr > td.danger a:hover,
+.table > tfoot > tr > td.danger a:hover,
+.table > thead > tr > th.danger a:hover,
+.table > tbody > tr > th.danger a:hover,
+.table > tfoot > tr > th.danger a:hover,
+.table > thead > tr.danger > td a:hover,
+.table > tbody > tr.danger > td a:hover,
+.table > tfoot > tr.danger > td a:hover,
+.table > thead > tr.danger > th a:hover,
+.table > tbody > tr.danger > th a:hover,
+.table > tfoot > tr.danger > th a:hover,
+.table > thead > tr > td.danger a:focus,
+.table > tbody > tr > td.danger a:focus,
+.table > tfoot > tr > td.danger a:focus,
+.table > thead > tr > th.danger a:focus,
+.table > tbody > tr > th.danger a:focus,
+.table > tfoot > tr > th.danger a:focus,
+.table > thead > tr.danger > td a:focus,
+.table > tbody > tr.danger > td a:focus,
+.table > tfoot > tr.danger > td a:focus,
+.table > thead > tr.danger > th a:focus,
+.table > tbody > tr.danger > th a:focus,
+.table > tfoot > tr.danger > th a:focus {
+  color: #A30000;
+}
+.table-hover > tbody > tr > td.danger:hover,
+.table-hover > tbody > tr > th.danger:hover,
+.table-hover > tbody > tr.danger:hover > td,
+.table-hover > tbody > tr:hover > .danger,
+.table-hover > tbody > tr.danger:hover > th {
+  background-color: #ffbdbd;
+}
+/* Inverse row */
+.table > thead > tr > td.dark,
+.table > tbody > tr > td.dark,
+.table > tfoot > tr > td.dark,
+.table > thead > tr > th.dark,
+.table > tbody > tr > th.dark,
+.table > tfoot > tr > th.dark,
+.table > thead > tr.dark > td,
+.table > tbody > tr.dark > td,
+.table > tfoot > tr.dark > td,
+.table > thead > tr.dark > th,
+.table > tbody > tr.dark > th,
+.table > tfoot > tr.dark > th {
+  background-color: #5C5054;
+  color: #fff;
+}
+/* Hover states for inverse table row */
+.table-hover > tbody > tr > td.dark:hover,
+.table-hover > tbody > tr > th.dark:hover,
+.table-hover > tbody > tr.dark:hover > td,
+.table-hover > tbody > tr:hover > .dark,
+.table-hover > tbody > tr.dark:hover > th {
+  background-color: #6a5c60;
+}
+td.actions a {
+  padding-right: 8px;
+}

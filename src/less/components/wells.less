@@ -1,0 +1,51 @@
+/**
+ * @file
+ * components/wells.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/wells.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.well {
+  padding: @default-space;
+  margin-bottom: @default-space;
+  .inner-shadow;
+  blockquote {
+    border-color: @border-color-dark;
+    border-color: rgba(0,0,0,.15);
+  }
+}
+.well-lg {padding: @default-space * 1.5;}
+.well-sm {padding: @half-space;}
+
+.well-primary,
+.well.primary {.well-colorize(@brand-primary);}
+.well-success,
+.well.success {.well-colorize(@brand-success);}
+.well-info,
+.well.info {.well-colorize(@brand-info);}
+.well-warning,
+.well.warning {.well-colorize(@brand-warning);}
+.well-danger,
+.well.danger {.well-colorize(@brand-danger);}
+.well-dark,
+.well.dark {
+  color: @inverse-text-color;
+  .bg-inverse;
+  border-color:@border-color-inverse;
+  @darken: darken(@inverse-bg, 10%);
+  .inner-shadow(rgba(red(@darken), green(@darken), blue(@darken), 0.8));
+}
+.well-light,
+.well.light {.bg-light;}

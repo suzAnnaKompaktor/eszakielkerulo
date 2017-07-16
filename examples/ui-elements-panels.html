@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Caffelatte - Responsive HTML5 Template 1.0</title>
+    <meta name="description" content="Caffelatte Admin - Responsive HTML5 Template 1.0">
+    <meta name="author" content="suzAnnaKompaktor">
+
+    <link rel="import" href="inc/menu-items.html">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" />
+
+    <!-- Web Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/dist/css/caffelatte.min.css" />
+
+  </head>
+
+  <body class="navbar-is-fixed-top" >
+    <div id="page">
+      <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="/" title="" rel="home" class="pull-left">
+                <img src="/dist/images/logo.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="icon icon-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <ul class="menu nav navbar-nav">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section role="main" class="main">
+
+      <div class="container container-main">
+        <div class="row">
+          <section class="col-xs-12">
+            <a id="main-content"></a>
+            <div class="mt-md">
+              <ul class="breadcrumb">
+                  <li><a href="/">Home</a></li>
+                  <li>UI elements</li>
+                  <li>Panels</li>
+              </ul>
+            </div>
+            <div class="title-section mb-sm clearfix">
+              <h1 class="page-title">Panels</h1>
+            </div>
+
+            <div class="">
+              <h3 id="panelBasic">Basic</h3>
+              <p>By default, all the <code>.panel</code> does is apply some basic border and padding to contain some content.</p>
+              <section class="panel">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                </div>
+              </section>
+
+              <h3 id="panelHeading">Panel with Heading</h3>
+              <p>Easily add a heading container to your panel with <code>.panel-heading</code>. You may also include any <code>h1</code> - <code>h6</code> with a <code>.panel-title</code> class to add a pre-styled heading.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <section class="panel">
+                    <header class="panel-heading">
+                      <div class="panel-actions">
+                        <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                        <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                      </div>
+
+                      <h2 class="panel-title">Title</h2>
+                    </header>
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                    </div>
+                  </section>
+                </div>
+
+                <div class="col-md-6">
+                  <section class="panel">
+                    <header class="panel-heading">
+                      <div class="panel-actions">
+                        <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                        <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                      </div>
+
+                      <h2 class="panel-title">Title</h2>
+                      <p class="panel-subtitle">Subtitle</p>
+                    </header>
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+              <h3 id="panelFooter">Panel with Footer</h3>
+              <p>Wrap buttons or secondary text in <code>.panel-footer</code>. Note that panel footers do not inherit colors and borders when using contextual variations as they are not meant to be in the foreground.</p>
+              <section class="panel">
+                <div class="panel-body">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                </div>
+                <div class="panel-footer">
+                  Panel Footer
+                </div>
+              </section>
+
+              <h3 id="panelColor">Color variants</h3>
+              <p>Like other components, easily make a panel more meaningful to a particular context by adding any of the contextual state classes.</p>
+              <div class="row">
+                  <div class="col-md-6">
+                    <section class="panel panel-primary">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-primary</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-primary">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-primary</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-success">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-success</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-success">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-success</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-warning">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-warning</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-warning">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-warning</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-danger">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-danger</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-danger">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-danger</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-info">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-info</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-info">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-info</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-dark">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-dark</code>
+                      </div>
+                    </section>
+                  </div>
+
+                  <div class="col-md-6">
+                    <section class="panel panel-dark">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Title</h2>
+                        <p class="panel-subtitle">Subtitle</p>
+                      </header>
+                      <div class="panel-body">
+                        <code>.panel-dark</code>
+                      </div>
+                    </section>
+                  </div>
+              </div>
+
+              <h3 id="panelTransparent">Panel Transparent</h3>
+              <p>Set the panel to transparent background.</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <section class="panel">
+                    <header class="panel-heading panel-heading-transparent">
+                      <h2 class="panel-title">Title</h2>
+                    </header>
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                    </div>
+                  </section>
+                </div>
+
+                <div class="col-md-6">
+                  <section class="panel panel-transparent">
+                    <header class="panel-heading">
+                      <div class="panel-actions">
+                        <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                        <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                      </div>
+
+                      <h2 class="panel-title">Title</h2>
+                      <p class="panel-subtitle">Subtitle</p>
+                    </header>
+                    <div class="panel-body">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.
+                    </div>
+                  </section>
+                </div>
+              </div>
+
+            </div>
+          <!-- end content -->
+          </section>
+        </div>
+       </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>First col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Second col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Third col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- eof .footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              Copyright information
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- eof #page -->
+
+  <a href="#" rel="scroll-to-top" class="scroll-to-top">
+    <i class="icon icon-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Vendor -->
+  <script src="/dist/vendor/jquery/jquery.min.js"></script>
+  <script src="/dist/vendor/bootstrap/bootstrap.min.js"></script>
+
+   <script type="text/javascript">
+    var link = document.querySelector('link[rel="import"]');
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+    document.querySelector('.navbar-nav').appendChild(clone);
+  </script>
+  <script src="inc/root.js"></script>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="/dist/js/caffelatte.js"></script>
+  <script src="/dist/js/plugins/all.js"></script>
+  <script src="/dist/js/init.min.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,48 @@
+/**
+ * @file
+ * widgets/simple-user-list.less.
+ */
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../../../vendor/bootstrap/less/thumbnails.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/widgets.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+@import (reference) "../components/thumbnails.less";
+
+ul.simple-user-list{
+  .list-unstyled;
+
+  li{
+    margin: 0 0 20px;
+  }
+
+  .image{
+    float:left;
+    .img-thumbnail;
+    padding:2px;
+    margin: 0 10px 0 0;
+
+    img{
+      width: 50px;
+      height:50px;
+    }
+  }
+
+  .title{
+    display: block;
+    .text-semi-bold;
+    line-height: normal;
+  }
+  .message{
+    .text-sm;
+  }
+}

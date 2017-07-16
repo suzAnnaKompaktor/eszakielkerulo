@@ -1,0 +1,121 @@
+/**
+ * @file
+ * components/social-icons.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/social-icons.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+ul.social-icons {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  .list-inline;
+}
+
+.social-icons {
+   a {
+    display: inline-block;
+    position: relative;
+    padding: @half-space;
+    overflow:hidden;
+    background-color: transparent;
+    text-align: center;
+    .text-muted;
+
+    &:hover,
+    &:focus {
+      background: @inverse-bg;
+      color: @inverse-text-color;
+    }
+
+    span {
+      text-indent: -9999px;
+    }
+
+    .@{fa-css-prefix} {
+      display: block;
+      width: 1em;
+      height: 1em;
+
+      &.@{fa-css-prefix}-lg {
+        width: (4em / 3);
+        height: (4em / 3);
+        line-height: (4em / 3);
+      }
+      &.@{fa-css-prefix}-2x {
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+      }
+    }
+  }
+
+  &.social-icons-inverse {
+    a {
+      color: @inverse-text-color;
+      background: @inverse-bg;
+
+      &:hover,
+      &:focus {
+        background: @dark-inverse-bg;
+        color: @inverse-text-color;
+      }
+    }
+  }
+
+  &.social-icons-rounded {
+    a {
+      .round-border(50%);
+    }
+  }
+}
+
+.social-icons .facebook {
+  .social-icon-variant(@color-facebook);
+}
+.social-icons .twitter {
+  .social-icon-variant(@color-twitter);
+}
+.social-icons .googleplus {
+  .social-icon-variant(@color-googleplus);
+}
+.social-icons .linkedin {
+  .social-icon-variant(@color-linkedin);
+}
+.social-icons .youtube,
+.social-icons .youtube_channel {
+  .social-icon-variant(@color-youtube);
+}
+.social-icons .github {
+  .social-icon-variant(@color-github);
+}
+.social-icons .yahoo {
+  .social-icon-variant(@color-yahoo);
+}
+.social-icons .dropbox {
+  .social-icon-variant(@color-dropbox);
+}
+.social-icons .rss {
+  .social-icon-variant(@color-rss);
+}
+.social-icons .instagram {
+  .social-icon-variant(@color-instagram);
+}
+.social-icons .pinterest {
+  .social-icon-variant(@color-pinterest);
+}
+.social-icons .vimeo {
+  .social-icon-variant(@color-vimeo);
+}

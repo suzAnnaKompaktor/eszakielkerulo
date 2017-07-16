@@ -1,0 +1,204 @@
+/**
+ * @file
+ * components/navbar.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+@import (reference) "forms.less";
+@import (reference) "buttons.less";
+
+
+.navbar{
+  box-sizing: content-box;
+  border-width: 0 0 1px 0;
+  max-height: @navbar-height;
+  .transition(height .2s);
+
+  body.navbar-is-fixed-top.scrolled & {
+    height: @navbar-height-small;
+    min-height: @navbar-height-small;
+  }
+}
+
+.navbar-collapse{
+  background: transparent;
+  border-top:none;
+  .unset-shadow;
+}
+
+.navbar-inverse {
+  .border-bottom(lighten(@border-color-inverse, 10%));
+  .strong-shadow();
+
+  .navbar-collapse{
+    &.in,
+    &.collapsing{
+      background: @dark-inverse-bg;
+      .border-bottom(lighten(@border-color-inverse, 10%));
+      .border-top(lighten(@border-color-inverse, 10%));
+      .strong-shadow();
+    }
+  }
+
+  .form-control{
+    .form-control-inverse;
+  }
+
+  .btn{
+    .btn-inverse;
+  }
+
+  .dropdown-menu{
+    background-color: @navbar-inverse-link-active-bg;
+    border-color: lighten(@border-color-inverse, 10%);
+    color: @navbar-inverse-link-active-color;
+    .strong-shadow();
+    border-top: none;
+
+    li{
+      a{
+        color: @navbar-inverse-link-active-color;
+
+        &:hover,
+        &:focus {
+          background-color: darken(@navbar-inverse-link-active-bg, 5%);
+        }
+      }
+
+      &.active{
+        a{
+          &,
+          &:hover,
+          &:focus{
+            background-color: darken(@navbar-inverse-link-active-bg, 5%);
+            color: @navbar-inverse-link-active-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+.navbar-default{
+  .border-bottom(@border-color-light);
+  .drop-shadow();
+
+  .navbar-collapse{
+    &.in,
+    &.collapsing{
+      background: @light-bg;
+      .border-bottom(@border-color-light);
+      .border-top(@border-color-light);
+      .drop-shadow();
+    }
+  }
+
+  .dropdown-menu{
+    background-color: @navbar-default-link-active-bg;
+    color: @navbar-default-link-active-color;
+    .drop-shadow();
+    border-top: none;
+
+    li{
+      a{
+        color: @navbar-default-link-active-color;
+
+        &:hover,
+        &:focus {
+          background-color: darken(@navbar-default-link-active-bg, 5%);
+        }
+      }
+
+      &.active{
+        a{
+          &,
+          &:hover,
+          &:focus{
+            background-color: darken(@navbar-default-link-active-bg, 5%);
+          }
+        }
+      }
+    }
+  }
+}
+// Navbar toggle
+.navbar-toggle{
+  padding: 9px 14px;
+  margin-bottom:0;
+
+  body.navbar-is-fixed-top.scrolled & {
+    margin-top: 10px;
+  }
+}
+
+.navbar-nav {
+  > li {
+    > a {
+      .transition(height .2s, background .2s linear;);
+    }
+  }
+
+  // Uncollapse the nav
+  body.navbar-is-fixed-top.scrolled & {
+    @media (min-width: @grid-float-breakpoint) {
+      > li {
+        > a {
+          padding-top:    @navbar-padding-vertical-small;
+          padding-bottom: @navbar-padding-vertical-small;
+        }
+      }
+    }
+  }
+
+  @media (min-width: @grid-float-breakpoint) {
+    float: right;
+  }
+}
+
+.navbar-brand {
+
+  img {
+    height: @navbar-height * 0.8;
+    margin-top: -@navbar-padding-vertical + (@navbar-height * 0.1);
+    .transition(all .2s linear);
+  }
+
+  body.navbar-is-fixed-top.scrolled & {
+    padding-top:    @navbar-padding-vertical-small;
+    padding-bottom: @navbar-padding-vertical-small;
+    height: @navbar-height-small;
+
+    img {
+      height: @navbar-height-small * 0.8;
+      margin-top: -@navbar-padding-vertical-small + (@navbar-height-small * 0.1);
+    }
+  }
+}
+
+.navbar-btn {
+  margin-top: @default-space;
+  margin-bottom: @default-space;
+}
+
+.navbar-fixed-bottom{
+
+  &.navbar-default{
+    .border-top(@border-color-light);
+    .drop-shadow(@shadow-position, -@shadow-distance);
+  }
+
+  &.navbar-inverse{
+    .border-top(lighten(@border-color-inverse, 10%));
+    .drop-shadow(0, -4px, 4px, rgba(0, 0, 0, 0.1));
+  }
+}

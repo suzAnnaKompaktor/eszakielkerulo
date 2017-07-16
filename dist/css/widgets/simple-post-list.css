@@ -1,0 +1,48 @@
+/**
+ * @file
+ * widgets/simple-post.less.
+ */
+ul.simple-post-list {
+  padding-left: 0;
+  list-style: none;
+}
+ul.simple-post-list li {
+  margin: 0 0 20px;
+}
+ul.simple-post-list li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+ul.simple-post-list .img-thumbnail {
+  float: left;
+  margin: 0 10px 0 0;
+}
+ul.simple-post-list .img-thumbnail img {
+  width: 80px;
+  height: 80px;
+}
+ul.simple-post-list .post-title {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #4d4249;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  margin: 0;
+}
+ul.simple-post-list .post-title small,
+ul.simple-post-list .post-title .small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999;
+}
+ul.simple-post-list .post-title small,
+ul.simple-post-list .post-title .small {
+  font-size: 75%;
+}
+ul.simple-post-list .post-meta {
+  font-size: 0.8em;
+  color: #999;
+}

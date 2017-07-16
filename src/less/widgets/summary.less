@@ -1,0 +1,62 @@
+/**
+ * @file
+ * widgets/profile.less.
+ */
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/widgets.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.widget-summary {
+
+  .panel-body {
+    padding: 0;
+  }
+
+  .widget-summary-content {
+    padding: @panel-body-padding @panel-body-padding (@panel-body-padding * 0.5) @panel-body-padding;
+    .clearfix();
+  }
+
+  .summary {
+    float: left;
+  }
+
+  .summary-title {
+    margin-top:2px;
+    margin-bottom:5px;
+    font-size: 15px;
+  }
+
+  .summary-content {
+    strong {
+      font-size: 150%;
+    }
+  }
+
+  .widget-summary-footer {
+    clear: both;
+
+    padding: @half-space @default-space;
+    .border-top;
+     color:@gray;
+
+    .@{fa-css-prefix} {
+      margin-right:@third-space;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+  }
+}

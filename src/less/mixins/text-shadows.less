@@ -1,0 +1,14 @@
+/**
+ * @file
+ * mixins/text-shadows.less.
+ *
+ * Add text shadows mixins.
+ */
+
+.text-shadow(@position: @textshadow-position, @distance: @textshadow-distance, @blur: @textshadow-blur, @color: @text-shadow) {
+  text-shadow:@position @distance @blur @color;
+}
+
+.text-shadow(@color: @text-shadow) {
+  text-shadow:@textshadow-position @textshadow-distance @textshadow-blur @color;
+}

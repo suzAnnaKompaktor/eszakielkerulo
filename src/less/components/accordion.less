@@ -1,0 +1,37 @@
+/**
+ * @file
+ * components/accordation.less.
+ */
+
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+
+.panel-accordion {
+  .panel-title {
+    margin-right: 0;
+    cursor: pointer;
+
+    > a {
+      display: block;
+
+      &.collapsed {
+        .opacity(0.5);
+      }
+
+      &:hover,
+      &:focus {
+        .opacity(1);
+      }
+    }
+  }
+
+  .accordion-actions {
+
+    & + .panel-title {
+      position: relative;
+      z-index: 20;
+    }
+
+  }
+}
+
+

@@ -1,0 +1,28 @@
+/**
+ * @file
+ * mixins/buttons-socials.less.
+ */
+
+.btn-variant-social(@color) {
+  &,
+  &:focus{
+    background: @color;
+    border-color: darken(@color, 2%);
+    color: #ffffff;
+    text-shadow: none;
+  }
+
+  &:hover{
+    @darken: darken(@color, 10%);
+    background: @darken;
+    border-color: darken(@darken, 2%);
+    color: #ffffff;
+  }
+
+  &:active{
+    @darken: darken(@color, 16%);
+    background: @darken;
+    border-color: darken(@darken, 2%);
+    color: #ffffff;
+  }
+}

@@ -1,0 +1,13 @@
+/**
+ * @file
+ * components/close.less.
+ */
+.close {
+  opacity: 0.3;
+  filter: alpha(opacity=30);
+}
+.close:hover,
+.close:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}

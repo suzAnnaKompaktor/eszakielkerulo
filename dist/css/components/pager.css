@@ -1,0 +1,40 @@
+/**
+ * @file
+ * components/pager.less.
+ */
+.pager-info li:not(.disabled) > a {
+  color: #0C69C3;
+}
+.pager-info li:not(.disabled) > a:hover,
+.pager-info li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #0C69C3;
+}
+.pager-success li:not(.disabled) > a {
+  color: #9DBB39;
+}
+.pager-success li:not(.disabled) > a:hover,
+.pager-success li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #9DBB39;
+}
+.pager-warning li:not(.disabled) > a {
+  color: #C5BD3C;
+}
+.pager-warning li:not(.disabled) > a:hover,
+.pager-warning li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #C5BD3C;
+}
+.pager-danger li:not(.disabled) > a {
+  color: #A30000;
+}
+.pager-danger li:not(.disabled) > a:hover,
+.pager-danger li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #A30000;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  color: #fff;
+}

@@ -1,0 +1,27 @@
+/**
+ * @file
+ * mixins/forms-wizard.less.
+ *
+ * Custom form wizards mixins.
+ */
+
+.wizard-tabs-colorize(@color) {
+  .wizard-tabs ul > li.active > a {
+    &,
+    &:hover,
+    &:focus {
+      color: @color;
+    }
+
+    .badge {
+      background-color: @color;
+    }
+  }
+}
+
+.wizard-steps-colorize(@color) {
+  .wizard-progress .wizard-steps li.active a span {
+    color: @color;
+    border-color: @color;
+  }
+}

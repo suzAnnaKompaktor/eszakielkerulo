@@ -1,0 +1,76 @@
+/**
+ * @file
+ * elements/lists.less.
+ */
+/**
+ * Bulleted list.
+ */
+.list-bullet {
+  position: relative;
+  padding: 5px 15px 5px 22.5px;
+}
+.list-bullet a {
+  display: block;
+  color: #161315;
+  padding: 5px 15px 5px 22.5px;
+  margin: -5px -15px -5px -22.5px;
+}
+.list-bullet a:hover,
+.list-bullet a:focus {
+  color: #161315;
+  background: rgba(92, 80, 84, 0.1);
+}
+.list-bullet:before {
+  border: 4px solid #766670;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  content: '';
+  display: inline-block;
+  left: 2px;
+  top: 10px;
+  position: absolute;
+  z-index: 999;
+}
+.list-bullet-primary:before {
+  border-color: #425503;
+}
+.list-bullet-info:before {
+  border-color: #0a549d;
+}
+.list-bullet-success:before {
+  border-color: #839c2f;
+}
+.list-bullet-warning:before {
+  border-color: #97912d;
+}
+.list-bullet-danger:before {
+  border-color: #A30000;
+}
+.list-bullet-dark:before {
+  border-color: #5C5054;
+}
+/**
+ * Separated list (by |).
+ */
+.list-separeted {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.list-separeted > li {
+  display: inline-block;
+}
+.list-separeted > li:after {
+  content: '\007C';
+  line-height: 0.8em;
+  font-size: 0.9em;
+  color: #999;
+  padding-left: 8px;
+  padding-right: 6px;
+}
+.list-separeted > li:last-child:after {
+  content: "";
+  padding: 0;
+}

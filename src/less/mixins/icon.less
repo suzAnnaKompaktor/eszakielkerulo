@@ -1,0 +1,36 @@
+/**
+ * @file
+ * mixins/icon.less.
+ *
+ * Add icon mixins.
+ */
+
+.add-icon(@content: "\00a0", @position: before) when ( @position = before) {
+  &:before {
+    content: @content;
+    .fa-icon();
+  }
+}
+.add-icon(@content: "\00a0", @position: before) when ( @position = after) {
+  &:after {
+    content: @content;
+    .fa-icon();
+  }
+}
+
+.icon-stack() {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+
+  &:before,
+  &:after {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}

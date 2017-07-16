@@ -1,0 +1,278 @@
+/**
+ * @file
+ * pages/mailbox.less.
+ */
+
+.compose-toolbar,
+.compose-btn {
+  .list-unstyled();
+  display:inline;
+
+  li {
+    display:inline;
+  }
+}
+
+.compose-toolbar {
+  li {
+    a {
+      line-height:30px;
+      padding:@half-space;
+
+      &:hover,
+      &:focus {
+        .bg-base;
+      }
+    }
+  }
+}
+
+.compose-btn {
+  float: right;
+}
+
+.mailbox__tags {
+  .list-unstyled();
+
+  > li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+ul.mailbox--folders {
+  .list-unstyled();
+
+  > li {
+    display: block;
+    position: relative;
+    height: 2.5em;
+    line-height: 2.5em;
+    .border-bottom(@border-color-light);
+
+    a {
+      &.menu-item {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        padding-left:@half-space;
+        padding-right: 80px;
+        color:@text-color;
+
+        i {
+          margin-right: 5px;
+          width: 16px;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        color: @text-color;
+      }
+    }
+
+    .item-options {
+      position: absolute;
+      padding: 0;
+      right: @half-space;
+      top: 0;
+    }
+
+    &:hover {
+      background: @dark-bg;
+
+      a.menu-item {
+        color: @link-color;
+      }
+    }
+
+    &.active{
+      background: @dark-bg;
+      a.menu-item{
+        color: @link-color;
+      }
+    }
+  }
+}
+
+.mailbox__email-list {
+
+  li {
+    .border-bottom;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 30px;
+    position: relative;
+
+    a {
+      color: @text-color;
+
+      &:hover {
+        background: @dark-bg;
+      }
+    }
+
+    &.unread {
+      a {
+        .text-bold;
+      }
+    }
+
+    &.active {
+      background: @inverse-bg;
+
+      a{
+        color: @inverse-text-color;
+      }
+    }
+  }
+
+  .mail-label {
+    border: 4px solid transparent;
+    border-radius: 10px;
+    display: inline-block;
+    left: 10px;
+    top: 19px;
+    position: absolute;
+  }
+
+  .col-sender {
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+    white-space: nowrap;
+
+    p {
+      display:inline-block;
+      left: 80px;
+      overflow: hidden;
+      position: absolute;
+      right: 0;
+      text-overflow: ellipsis;
+      top: 0;
+      white-space: nowrap;
+    }
+
+    .checkbox-custom{
+      position: absolute;
+      left:30px;
+
+      label:before{
+        top:25%;
+      }
+
+      input[type=checkbox]:checked+label:after{
+        top:25%;
+      }
+    }
+  }
+
+  .col-mail {
+    position: absolute;
+    bottom: 0;
+    left: 290px;
+    right: 30px;
+    top: 0;
+
+    .mail-content,
+    .mail-date,
+    .mail-attachment {
+      position: absolute;
+      top: 0;
+    }
+
+    .mail-content {
+      left: 0;
+      right: 140px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .mail-attachment {
+      color: @text-muted;
+      right: 100px;
+      line-height: 45px;
+    }
+
+    .mail-date {
+      color: @text-muted;
+      padding-left: 80px;
+      right: 0;
+      width: 150px;
+      text-align: right;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .mailbox__email-list {
+    position: static !important;
+
+    li {
+      height: 75px;
+    }
+
+    .mail-label {
+      border-radius: 0;
+      border-width: 1px;
+      bottom: 0;
+      left: 0;
+      top: 0;
+    }
+
+    .col-sender {
+      width: 100%;
+    }
+
+    .col-mail {
+      .mail-content {
+        right: 0;
+        top: 25px;
+      }
+
+      .mail-attachment {
+        font-size: 11px;
+        font-size: 1.1rem;
+        line-height: 14px;
+        line-height: 1.4rem;
+        top: 6px;
+      }
+
+      .mail-date {
+        font-size: 10px;
+        font-size: 1rem;
+        line-height: 14px;
+        line-height: 1.4rem;
+        padding-left: 0;
+        text-align: right;
+        top: 5px;
+        width: 130px;
+      }
+    }
+  }
+}
+
+
+.mailbox__email {
+   .panel{
+      margin-bottom: 0;
+
+      .panel-footer {
+        small{
+          color: @text-muted;
+        }
+      }
+    }
+}
+
+.mailbox__compose .bootstrap-tagsinput{
+  width: 100%;
+}

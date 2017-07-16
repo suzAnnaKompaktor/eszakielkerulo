@@ -1,0 +1,1 @@
+.panel-accordion .panel-title{margin-right:0;cursor:pointer}.panel-accordion .panel-title>a{display:block}.panel-accordion .panel-title>a.collapsed{opacity:.5;filter:alpha(opacity=50)}.panel-accordion .panel-title>a:hover,.panel-accordion .panel-title>a:focus{opacity:1;filter:alpha(opacity=100)}.panel-accordion .accordion-actions+.panel-title{position:relative;z-index:20}

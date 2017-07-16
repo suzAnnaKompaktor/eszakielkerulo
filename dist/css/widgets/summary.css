@@ -1,0 +1,41 @@
+/**
+ * @file
+ * widgets/profile.less.
+ */
+.widget-summary .panel-body {
+  padding: 0;
+}
+.widget-summary .widget-summary-content {
+  padding: 15px 15px 7.5px 15px;
+}
+.widget-summary .widget-summary-content:before,
+.widget-summary .widget-summary-content:after {
+  content: " ";
+  display: table;
+}
+.widget-summary .widget-summary-content:after {
+  clear: both;
+}
+.widget-summary .summary {
+  float: left;
+}
+.widget-summary .summary-title {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+.widget-summary .summary-content strong {
+  font-size: 150%;
+}
+.widget-summary .widget-summary-footer {
+  clear: both;
+  padding: 8px 15px;
+  border-top: 1px solid #e0e0e0;
+  color: #4d4249;
+}
+.widget-summary .widget-summary-footer .icon {
+  margin-right: 5px;
+}
+.widget-summary .widget-summary-footer p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,406 @@
+/**
+ * @file
+ * components/pricing-tables.less.
+ */
+.pricing-table .plan {
+  border: 1px solid #e0e0e0;
+  -webkit-box-shadow: 0 1px 2px #ededed;
+  box-shadow: 0 1px 2px #ededed;
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.pricing-table .plan h3 {
+  padding: 30px 15px 15px 15px;
+  margin: -1px -1px 50px -1px;
+  background-color: #e5e5e5;
+  border: 1px solid #d3d3d3;
+  -webkit-box-shadow: 0 1px 2px #ededed;
+  box-shadow: 0 1px 2px #ededed;
+}
+.pricing-table .plan h3.bg-styled {
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 0 20px rgba(216, 216, 216, 0.8);
+  box-shadow: inset 0 0 20px rgba(216, 216, 216, 0.8);
+  -webkit-box-shadow: inset 0 0 2rem rgba(216, 216, 216, 0.8);
+  box-shadow: inset 0 0 2rem rgba(216, 216, 216, 0.8);
+}
+.pricing-table .plan h3.bg-styled-alt {
+  background-image: -webkit-linear-gradient(top, rgba(216, 216, 216, 0.8) 0%, #e5e5e5 30%);
+  background-image: -o-linear-gradient(top, rgba(216, 216, 216, 0.8) 0%, #e5e5e5 30%);
+  background-image: linear-gradient(to bottom, rgba(216, 216, 216, 0.8) 0%, #e5e5e5 30%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccd8d8d8', endColorstr='#ffe5e5e5', GradientType=0);
+}
+.pricing-table .plan h3.bordered {
+  border: 1px solid #d3d3d3;
+}
+.pricing-table .plan h3 .jumbotron {
+  background: transparent;
+}
+.pricing-table .plan h3 span {
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  margin: 20px auto -65px;
+  border: 1px solid #1d1d1d;
+  color: #fff;
+  background-color: #5C5054;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+}
+a.pricing-table .plan h3 span:hover,
+a.pricing-table .plan h3 span:focus {
+  background-color: #41383b;
+}
+.pricing-table .plan h3 span.bg-styled {
+  background-color: #5C5054;
+  -webkit-box-shadow: inset 0 0 20px rgba(78, 68, 72, 0.8);
+  box-shadow: inset 0 0 20px rgba(78, 68, 72, 0.8);
+  -webkit-box-shadow: inset 0 0 2rem rgba(78, 68, 72, 0.8);
+  box-shadow: inset 0 0 2rem rgba(78, 68, 72, 0.8);
+}
+.pricing-table .plan h3 span.bg-styled-alt {
+  background-image: -webkit-linear-gradient(top, #4e4448 0%, #5C5054 30%);
+  background-image: -o-linear-gradient(top, #4e4448 0%, #5C5054 30%);
+  background-image: linear-gradient(to bottom, #4e4448 0%, #5C5054 30%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4e4448', endColorstr='#ff5c5054', GradientType=0);
+}
+.pricing-table .plan h3 span.bordered {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #463d42;
+}
+.pricing-table .plan h3 span .jumbotron {
+  background: transparent;
+}
+.pricing-table .plan h3 span strong {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100px;
+  color: #fff;
+  display: block;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: inset 0 10px 10px rgba(65, 56, 59, 0.8);
+  box-shadow: inset 0 10px 10px rgba(65, 56, 59, 0.8);
+}
+.pricing-table .plan .btn {
+  margin-top: 15px;
+}
+.pricing-table .plan ul {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 15px;
+}
+.pricing-table .plan ul > li {
+  padding: 8px;
+  border-top: 1px solid #e0e0e0;
+}
+.pricing-table .plan-primary h3 {
+  color: #fff;
+  background-color: #617d04;
+  border-color: #505503;
+}
+.pricing-table .plan-primary h3 span {
+  background: #465503;
+  border-color: #2d2e01;
+}
+.pricing-table .plan-primary h3 span strong {
+  -webkit-box-shadow: inset 0 10px 10px rgba(38, 46, 1, 0.8);
+  box-shadow: inset 0 10px 10px rgba(38, 46, 1, 0.8);
+}
+.pricing-table .plan-primary .btn:not(.btn-flat) {
+  text-shadow: #000000 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #000000;
+  border-color: #3b4c02;
+  background-image: -webkit-linear-gradient(top, #80a505 0%, #425503 100%);
+  background-image: -o-linear-gradient(top, #80a505 0%, #425503 100%);
+  background-image: linear-gradient(to bottom, #80a505 0%, #425503 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff80a505', endColorstr='#ff425503', GradientType=0);
+}
+.pricing-table .plan-primary .btn:not(.btn-flat):hover,
+.pricing-table .plan-primary .btn:not(.btn-flat):focus,
+.pricing-table .plan-primary .btn:not(.btn-flat):active,
+.pricing-table .plan-primary .btn:not(.btn-flat).active,
+.open > .dropdown-toggle.pricing-table .plan-primary .btn:not(.btn-flat) {
+  border-color: #4a5f03;
+}
+.pricing-table .plan-primary .btn:not(.btn-flat):hover,
+.pricing-table .plan-primary .btn:not(.btn-flat):focus,
+.open > .dropdown-toggle.pricing-table .plan-primary .btn:not(.btn-flat) {
+  background-image: -webkit-linear-gradient(top, #93bd06 0%, #556e04 100%);
+  background-image: -o-linear-gradient(top, #93bd06 0%, #556e04 100%);
+  background-image: linear-gradient(to bottom, #93bd06 0%, #556e04 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff93bd06', endColorstr='#ff556e04', GradientType=0);
+}
+.pricing-table .plan-primary .btn:not(.btn-flat):active,
+.pricing-table .plan-primary .btn:not(.btn-flat).active {
+  background-image: -webkit-linear-gradient(top, #617d04 0%, #9ecc07 100%);
+  background-image: -o-linear-gradient(top, #617d04 0%, #9ecc07 100%);
+  background-image: linear-gradient(to bottom, #617d04 0%, #9ecc07 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff617d04', endColorstr='#ff9ecc07', GradientType=0);
+}
+.pricing-table .plan-primary .btn:not(.btn-flat).disabled,
+.pricing-table .plan-primary .btn:not(.btn-flat)[disabled] {
+  background-image: -webkit-linear-gradient(top, #597304 0%, #1c2401 100%);
+  background-image: -o-linear-gradient(top, #597304 0%, #1c2401 100%);
+  background-image: linear-gradient(to bottom, #597304 0%, #1c2401 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff597304', endColorstr='#ff1c2401', GradientType=0);
+}
+.pricing-table .plan-info h3 {
+  color: #fff;
+  background-color: #0C69C3;
+  border-color: #0a6d9d;
+}
+.pricing-table .plan-info h3 span {
+  background: #0a5c9d;
+  border-color: #075876;
+}
+.pricing-table .plan-info h3 span strong {
+  -webkit-box-shadow: inset 0 10px 10px rgba(7, 69, 118, 0.8);
+  box-shadow: inset 0 10px 10px rgba(7, 69, 118, 0.8);
+}
+.pricing-table .plan-info .btn:not(.btn-flat) {
+  text-shadow: #04213c 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #04213c;
+  border-color: #094f93;
+  background-image: -webkit-linear-gradient(top, #0e7ee9 0%, #0a549d 100%);
+  background-image: -o-linear-gradient(top, #0e7ee9 0%, #0a549d 100%);
+  background-image: linear-gradient(to bottom, #0e7ee9 0%, #0a549d 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0e7ee9', endColorstr='#ff0a549d', GradientType=0);
+}
+.pricing-table .plan-info .btn:not(.btn-flat):hover,
+.pricing-table .plan-info .btn:not(.btn-flat):focus,
+.pricing-table .plan-info .btn:not(.btn-flat):active,
+.pricing-table .plan-info .btn:not(.btn-flat).active,
+.open > .dropdown-toggle.pricing-table .plan-info .btn:not(.btn-flat) {
+  border-color: #0a59a6;
+}
+.pricing-table .plan-info .btn:not(.btn-flat):hover,
+.pricing-table .plan-info .btn:not(.btn-flat):focus,
+.open > .dropdown-toggle.pricing-table .plan-info .btn:not(.btn-flat) {
+  background-image: -webkit-linear-gradient(top, #208af1 0%, #0b61b5 100%);
+  background-image: -o-linear-gradient(top, #208af1 0%, #0b61b5 100%);
+  background-image: linear-gradient(to bottom, #208af1 0%, #0b61b5 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff208af1', endColorstr='#ff0b61b5', GradientType=0);
+}
+.pricing-table .plan-info .btn:not(.btn-flat):active,
+.pricing-table .plan-info .btn:not(.btn-flat).active {
+  background-image: -webkit-linear-gradient(top, #0c69c3 0%, #2e92f2 100%);
+  background-image: -o-linear-gradient(top, #0c69c3 0%, #2e92f2 100%);
+  background-image: linear-gradient(to bottom, #0c69c3 0%, #2e92f2 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0c69c3', endColorstr='#ff2e92f2', GradientType=0);
+}
+.pricing-table .plan-info .btn:not(.btn-flat).disabled,
+.pricing-table .plan-info .btn:not(.btn-flat)[disabled] {
+  background-image: -webkit-linear-gradient(top, #0b64b9 0%, #073a6d 100%);
+  background-image: -o-linear-gradient(top, #0b64b9 0%, #073a6d 100%);
+  background-image: linear-gradient(to bottom, #0b64b9 0%, #073a6d 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0b64b9', endColorstr='#ff073a6d', GradientType=0);
+}
+.pricing-table .plan-success h3 {
+  color: #fff;
+  background-color: #9DBB39;
+  border-color: #959c2f;
+}
+.pricing-table .plan-success h3 span {
+  background: #889c2f;
+  border-color: #7b7c26;
+}
+.pricing-table .plan-success h3 span strong {
+  -webkit-box-shadow: inset 0 10px 10px rgba(109, 124, 38, 0.8);
+  box-shadow: inset 0 10px 10px rgba(109, 124, 38, 0.8);
+}
+.pricing-table .plan-success .btn:not(.btn-flat) {
+  text-shadow: #414e18 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #414e18;
+  border-color: #7c942d;
+  background-image: -webkit-linear-gradient(top, #afca52 0%, #839c2f 100%);
+  background-image: -o-linear-gradient(top, #afca52 0%, #839c2f 100%);
+  background-image: linear-gradient(to bottom, #afca52 0%, #839c2f 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffafca52', endColorstr='#ff839c2f', GradientType=0);
+}
+.pricing-table .plan-success .btn:not(.btn-flat):hover,
+.pricing-table .plan-success .btn:not(.btn-flat):focus,
+.pricing-table .plan-success .btn:not(.btn-flat):active,
+.pricing-table .plan-success .btn:not(.btn-flat).active,
+.open > .dropdown-toggle.pricing-table .plan-success .btn:not(.btn-flat) {
+  border-color: #89a432;
+}
+.pricing-table .plan-success .btn:not(.btn-flat):hover,
+.pricing-table .plan-success .btn:not(.btn-flat):focus,
+.open > .dropdown-toggle.pricing-table .plan-success .btn:not(.btn-flat) {
+  background-image: -webkit-linear-gradient(top, #b8d066 0%, #93af35 100%);
+  background-image: -o-linear-gradient(top, #b8d066 0%, #93af35 100%);
+  background-image: linear-gradient(to bottom, #b8d066 0%, #93af35 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb8d066', endColorstr='#ff93af35', GradientType=0);
+}
+.pricing-table .plan-success .btn:not(.btn-flat):active,
+.pricing-table .plan-success .btn:not(.btn-flat).active {
+  background-image: -webkit-linear-gradient(top, #9dbb39 0%, #bdd472 100%);
+  background-image: -o-linear-gradient(top, #9dbb39 0%, #bdd472 100%);
+  background-image: linear-gradient(to bottom, #9dbb39 0%, #bdd472 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9dbb39', endColorstr='#ffbdd472', GradientType=0);
+}
+.pricing-table .plan-success .btn:not(.btn-flat).disabled,
+.pricing-table .plan-success .btn:not(.btn-flat)[disabled] {
+  background-image: -webkit-linear-gradient(top, #96b337 0%, #627524 100%);
+  background-image: -o-linear-gradient(top, #96b337 0%, #627524 100%);
+  background-image: linear-gradient(to bottom, #96b337 0%, #627524 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff96b337', endColorstr='#ff627524', GradientType=0);
+}
+.pricing-table .plan-warning h3 {
+  color: #fff;
+  background-color: #C5BD3C;
+  border-color: #a78c32;
+}
+.pricing-table .plan-warning h3 span {
+  background: #a79a32;
+  border-color: #876d28;
+}
+.pricing-table .plan-warning h3 span strong {
+  -webkit-box-shadow: inset 0 10px 10px rgba(135, 125, 40, 0.8);
+  box-shadow: inset 0 10px 10px rgba(135, 125, 40, 0.8);
+}
+.pricing-table .plan-warning .btn:not(.btn-flat) {
+  text-shadow: #605c1d 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #605c1d;
+  border-color: #a7a032;
+  background-image: -webkit-linear-gradient(top, #d1ca63 0%, #aea734 100%);
+  background-image: -o-linear-gradient(top, #d1ca63 0%, #aea734 100%);
+  background-image: linear-gradient(to bottom, #d1ca63 0%, #aea734 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1ca63', endColorstr='#ffaea734', GradientType=0);
+}
+.pricing-table .plan-warning .btn:not(.btn-flat):hover,
+.pricing-table .plan-warning .btn:not(.btn-flat):focus,
+.pricing-table .plan-warning .btn:not(.btn-flat):active,
+.pricing-table .plan-warning .btn:not(.btn-flat).active,
+.open > .dropdown-toggle.pricing-table .plan-warning .btn:not(.btn-flat) {
+  border-color: #b6af36;
+}
+.pricing-table .plan-warning .btn:not(.btn-flat):hover,
+.pricing-table .plan-warning .btn:not(.btn-flat):focus,
+.open > .dropdown-toggle.pricing-table .plan-warning .btn:not(.btn-flat) {
+  background-image: -webkit-linear-gradient(top, #d7d177 0%, #c2ba3a 100%);
+  background-image: -o-linear-gradient(top, #d7d177 0%, #c2ba3a 100%);
+  background-image: linear-gradient(to bottom, #d7d177 0%, #c2ba3a 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd7d177', endColorstr='#ffc2ba3a', GradientType=0);
+}
+.pricing-table .plan-warning .btn:not(.btn-flat):active,
+.pricing-table .plan-warning .btn:not(.btn-flat).active {
+  background-image: -webkit-linear-gradient(top, #c7c044 0%, #dad583 100%);
+  background-image: -o-linear-gradient(top, #c7c044 0%, #dad583 100%);
+  background-image: linear-gradient(to bottom, #c7c044 0%, #dad583 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc7c044', endColorstr='#ffdad583', GradientType=0);
+}
+.pricing-table .plan-warning .btn:not(.btn-flat).disabled,
+.pricing-table .plan-warning .btn:not(.btn-flat)[disabled] {
+  background-image: -webkit-linear-gradient(top, #c5bd3c 0%, #878228 100%);
+  background-image: -o-linear-gradient(top, #c5bd3c 0%, #878228 100%);
+  background-image: linear-gradient(to bottom, #c5bd3c 0%, #878228 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffc5bd3c', endColorstr='#ff878228', GradientType=0);
+}
+.pricing-table .plan-danger h3 {
+  color: #fff;
+  background-color: #A30000;
+  border-color: #7a0014;
+}
+.pricing-table .plan-danger h3 span {
+  background: #7a0006;
+  border-color: #510012;
+}
+.pricing-table .plan-danger h3 span strong {
+  -webkit-box-shadow: inset 0 10px 10px rgba(81, 0, 4, 0.8);
+  box-shadow: inset 0 10px 10px rgba(81, 0, 4, 0.8);
+}
+.pricing-table .plan-danger .btn:not(.btn-flat) {
+  text-shadow: #140000 1px 0 #ffffff;
+  text-shadow: 0 1px 0 #140000;
+  border-color: #700000;
+  background-image: -webkit-linear-gradient(top, #cc0000 0%, #7a0000 100%);
+  background-image: -o-linear-gradient(top, #cc0000 0%, #7a0000 100%);
+  background-image: linear-gradient(to bottom, #cc0000 0%, #7a0000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffcc0000', endColorstr='#ff7a0000', GradientType=0);
+}
+.pricing-table .plan-danger .btn:not(.btn-flat):hover,
+.pricing-table .plan-danger .btn:not(.btn-flat):focus,
+.pricing-table .plan-danger .btn:not(.btn-flat):active,
+.pricing-table .plan-danger .btn:not(.btn-flat).active,
+.open > .dropdown-toggle.pricing-table .plan-danger .btn:not(.btn-flat) {
+  border-color: #840000;
+}
+.pricing-table .plan-danger .btn:not(.btn-flat):hover,
+.pricing-table .plan-danger .btn:not(.btn-flat):focus,
+.open > .dropdown-toggle.pricing-table .plan-danger .btn:not(.btn-flat) {
+  background-image: -webkit-linear-gradient(top, #e50000 0%, #940000 100%);
+  background-image: -o-linear-gradient(top, #e50000 0%, #940000 100%);
+  background-image: linear-gradient(to bottom, #e50000 0%, #940000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe50000', endColorstr='#ff940000', GradientType=0);
+}
+.pricing-table .plan-danger .btn:not(.btn-flat):active,
+.pricing-table .plan-danger .btn:not(.btn-flat).active {
+  background-image: -webkit-linear-gradient(top, #a30000 0%, #f50000 100%);
+  background-image: -o-linear-gradient(top, #a30000 0%, #f50000 100%);
+  background-image: linear-gradient(to bottom, #a30000 0%, #f50000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffa30000', endColorstr='#fff50000', GradientType=0);
+}
+.pricing-table .plan-danger .btn:not(.btn-flat).disabled,
+.pricing-table .plan-danger .btn:not(.btn-flat)[disabled] {
+  background-image: -webkit-linear-gradient(top, #990000 0%, #470000 100%);
+  background-image: -o-linear-gradient(top, #990000 0%, #470000 100%);
+  background-image: linear-gradient(to bottom, #990000 0%, #470000 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff990000', endColorstr='#ff470000', GradientType=0);
+}
+.pricing-table .plan-ribbon-wrapper {
+  height: 88px;
+  overflow: hidden;
+  position: absolute;
+  right: 14px;
+  top: -1px;
+  width: 85px;
+}
+.pricing-table .plan-ribbon-wrapper .plan-ribbon {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-image: -webkit-linear-gradient(top, #615559 0%, #493f43 100%);
+  background-image: -o-linear-gradient(top, #615559 0%, #493f43 100%);
+  background-image: linear-gradient(to bottom, #615559 0%, #493f43 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff615559', endColorstr='#ff493f43', GradientType=0);
+  color: #fff;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  left: -5px;
+  padding: 7px 0;
+  position: relative;
+  text-align: center;
+  top: 15px;
+  width: 120px;
+}

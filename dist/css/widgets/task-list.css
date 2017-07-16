@@ -1,0 +1,29 @@
+/**
+ * @file
+ * widgets/task-list.less.
+ */
+ul.widget-task-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+ul.widget-task-list li {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 15px 15px 0;
+  position: relative;
+}
+ul.widget-task-list li .checkbox-custom {
+  margin-bottom: 0;
+}
+ul.widget-task-list li .task-actions {
+  position: absolute;
+  top: 14px;
+  right: 0;
+  bottom: 14px;
+}
+ul.widget-task-list li .task-actions .task-remove {
+  font-size: 10px;
+  vertical-align: middle;
+  color: #999;
+}

@@ -1,0 +1,50 @@
+/**
+ * @file
+ * base/error.less.
+ */
+
+.has-error label.error{
+  line-height: 2em;
+}
+label.error{
+  margin-bottom: 0;
+  display: inline;
+}
+label.error,
+span.required{
+  .text-emphasis-variant(@state-danger-text);
+}
+li.has-error,
+.vertical-tabs ul.vertical-tabs-list > li.has-error,
+.horizontal-tabs ul.horizontal-tabs-list > li.has-error
+{
+  > a{
+    color: @state-danger-text;
+  }
+}
+div.messages.error{
+  .alert;
+  .alert-danger;
+
+  ul {
+    display: none;
+    list-style: none;
+
+    label.error {
+      display: block;
+      padding-left: 22px;
+      position: relative;
+
+      &:before {
+        font-family: 'FontAwesome';
+        content: @fa-var-close;
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 16px;
+        color: @state-danger-text;
+        display: inline-block;
+      }
+    }
+  }
+}

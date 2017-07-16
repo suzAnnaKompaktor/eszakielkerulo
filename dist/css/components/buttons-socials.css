@@ -1,0 +1,143 @@
+/**
+ * @file
+ * components//buttons-socials.less.
+ */
+.btn-social {
+  color: #FFFFFF;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: none !important;
+}
+.btn-facebook,
+.btn-twitter,
+.btn-googleplus {
+  color: #FFFFFF;
+  font-weight: 300;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-style: solid;
+  border-width: 1px;
+  text-shadow: none !important;
+}
+.btn-facebook,
+.btn-facebook:focus {
+  background: #3B5998;
+  border-color: #385591;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-facebook:hover {
+  background: #2d4373;
+  border-color: #2a3f6c;
+  color: #ffffff;
+}
+.btn-facebook:active {
+  background: #24375d;
+  border-color: #213256;
+  color: #ffffff;
+}
+.btn-twitter,
+.btn-twitter:focus {
+  background: #55ACEE;
+  border-color: #4ca7ed;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-twitter:hover {
+  background: #2795e9;
+  border-color: #1d91e8;
+  color: #ffffff;
+}
+.btn-twitter:active {
+  background: #1686db;
+  border-color: #1581d2;
+  color: #ffffff;
+}
+.btn-googleplus,
+.btn-googleplus:focus {
+  background: #db4437;
+  border-color: #d93c2e;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-googleplus:hover {
+  background: #bd2e22;
+  border-color: #b42c20;
+  color: #ffffff;
+}
+.btn-googleplus:active {
+  background: #a3281d;
+  border-color: #9a261c;
+  color: #ffffff;
+}
+.btn-github,
+.btn-github:focus {
+  background: #444444;
+  border-color: #3f3f3f;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-github:hover {
+  background: #2b2b2b;
+  border-color: #252525;
+  color: #ffffff;
+}
+.btn-github:active {
+  background: #1b1b1b;
+  border-color: #161616;
+  color: #ffffff;
+}
+.btn-linkedin,
+.btn-linkedin:focus {
+  background: #0077B5;
+  border-color: #0070ab;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-linkedin:hover {
+  background: #005582;
+  border-color: #004f78;
+  color: #ffffff;
+}
+.btn-linkedin:active {
+  background: #004163;
+  border-color: #003b59;
+  color: #ffffff;
+}
+.btn-dropbox,
+.btn-dropbox:focus {
+  background: #007EE5;
+  border-color: #0078db;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-dropbox:hover {
+  background: #0062b2;
+  border-color: #005ca8;
+  color: #ffffff;
+}
+.btn-dropbox:active {
+  background: #005193;
+  border-color: #004b89;
+  color: #ffffff;
+}
+.btn-yahoo,
+.btn-yahoo:focus {
+  background: #7B0099;
+  border-color: #73008f;
+  color: #ffffff;
+  text-shadow: none;
+}
+.btn-yahoo:hover {
+  background: #520066;
+  border-color: #4a005c;
+  color: #ffffff;
+}
+.btn-yahoo:active {
+  background: #390047;
+  border-color: #31003d;
+  color: #ffffff;
+}

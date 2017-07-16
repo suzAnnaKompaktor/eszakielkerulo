@@ -1,0 +1,32 @@
+/**
+ * @file
+ * components/action-links.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+
+
+.action-links{
+  display:inline-block;
+  .box-sizing(content-box);
+  .list-unstyled();
+
+  li{
+    display: block;
+    float: left;
+    padding-right:@third-space;
+  }
+
+  a.label{
+    font-size:85%;
+    font-weight:normal;
+
+    .@{fa-css-prefix}{
+      margin-right:@third-space;
+    }
+  }
+}

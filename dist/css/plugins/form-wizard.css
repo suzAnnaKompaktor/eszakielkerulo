@@ -1,0 +1,430 @@
+/**
+ * @file
+ * plugins/form-wizard.less.
+ */
+.wizard-tabs {
+  margin-bottom: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+.wizard-tabs ul.wizard-steps {
+  display: table;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.wizard-tabs ul.wizard-steps > li {
+  display: table-cell;
+  border-bottom: 1px solid #e0e0e0;
+}
+.wizard-tabs ul.wizard-steps > li > a {
+  position: relative;
+  display: block;
+  padding: 7px;
+  font-size: 13px;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #161315;
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-box-shadow: 0 1px 2px #ededed;
+  box-shadow: 0 1px 2px #ededed;
+}
+.wizard-tabs ul.wizard-steps > li > a,
+.wizard-tabs ul.wizard-steps > li > a:hover {
+  background: #f1f1f1;
+  color: #4d4249;
+}
+.wizard-tabs ul.wizard-steps > li > a:active,
+.wizard-tabs ul.wizard-steps > li > a:focus {
+  border-bottom: 0;
+}
+.wizard-tabs ul.wizard-steps > li > a:before,
+.wizard-tabs ul.wizard-steps > li > a:after {
+  display: block;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -10px;
+  z-index: 1;
+  border: 17px solid transparent;
+  border-right: 0;
+  border-left: 10px solid transparent;
+  width: 0;
+  height: 0;
+  margin-left: -1px;
+}
+.wizard-tabs ul.wizard-steps > li > a:before {
+  z-index: 1;
+  right: -11px;
+  border-left-color: #e0e0e0;
+}
+.wizard-tabs ul.wizard-steps > li > a:after {
+  z-index: 2;
+  border-left-color: #f1f1f1;
+}
+.wizard-tabs ul.wizard-steps > li.disabled > a,
+.wizard-tabs ul.wizard-steps > li.disabled > a:hover,
+.wizard-tabs ul.wizard-steps > li.disabled > a:focus {
+  color: #685a63;
+}
+.wizard-tabs ul.wizard-steps > li.disabled > a .badge {
+  background-color: #685a63;
+}
+.wizard-tabs ul.wizard-steps > li:last-child > a:before,
+.wizard-tabs ul.wizard-steps > li:last-child > a:after {
+  display: none;
+}
+.wizard-tabs ul.wizard-steps > li.active {
+  border-bottom-color: transparent;
+}
+.wizard-tabs ul.wizard-steps > li.active > a,
+.wizard-tabs ul.wizard-steps > li.active > a:hover,
+.wizard-tabs ul.wizard-steps > li.active > a:focus {
+  background: #f9f9f9;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.wizard-tabs ul.wizard-steps > li.active > a:after {
+  border-left-color: #f9f9f9;
+}
+.wizard-tabs ul.wizard-steps > li.active > a .badge {
+  background-color: #999;
+}
+.panel-body .wizard-tabs {
+  margin: -15px -15px 15px -15px;
+}
+.panel-body .wizard-tabs ul > li.active > a,
+.panel-body .wizard-tabs ul > li.active > a:hover,
+.panel-body .wizard-tabs ul > li.active > a:focus {
+  background: white;
+  color: #4d4249;
+}
+.panel-body .wizard-tabs ul > li.active > a:after {
+  border-left-color: white;
+}
+.form-wizard-primary .wizard-tabs ul > li.active > a,
+.form-wizard-primary .wizard-tabs ul > li.active > a:hover,
+.form-wizard-primary .wizard-tabs ul > li.active > a:focus {
+  color: #617d04;
+}
+.form-wizard-primary .wizard-tabs ul > li.active > a .badge {
+  background-color: #617d04;
+}
+.form-wizard-primary .wizard-progress .wizard-steps li.active a span {
+  color: #617d04;
+  border-color: #617d04;
+}
+.form-wizard-primary .progress-bar {
+  background-color: #617d04;
+}
+.progress-striped .form-wizard-primary .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.form-wizard-info .wizard-tabs ul > li.active > a,
+.form-wizard-info .wizard-tabs ul > li.active > a:hover,
+.form-wizard-info .wizard-tabs ul > li.active > a:focus {
+  color: #0C69C3;
+}
+.form-wizard-info .wizard-tabs ul > li.active > a .badge {
+  background-color: #0C69C3;
+}
+.form-wizard-info .pager li:not(.disabled) > a {
+  color: #0C69C3;
+}
+.form-wizard-info .pager li:not(.disabled) > a:hover,
+.form-wizard-info .pager li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #0C69C3;
+}
+.form-wizard-info .wizard-progress .wizard-steps li.active a span {
+  color: #0C69C3;
+  border-color: #0C69C3;
+}
+.form-wizard-info .progress-bar {
+  background-color: #0C69C3;
+}
+.progress-striped .form-wizard-info .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.form-wizard-success .wizard-tabs ul > li.active > a,
+.form-wizard-success .wizard-tabs ul > li.active > a:hover,
+.form-wizard-success .wizard-tabs ul > li.active > a:focus {
+  color: #9DBB39;
+}
+.form-wizard-success .wizard-tabs ul > li.active > a .badge {
+  background-color: #9DBB39;
+}
+.form-wizard-success .pager li:not(.disabled) > a {
+  color: #9DBB39;
+}
+.form-wizard-success .pager li:not(.disabled) > a:hover,
+.form-wizard-success .pager li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #9DBB39;
+}
+.form-wizard-success .wizard-progress .wizard-steps li.active a span {
+  color: #9DBB39;
+  border-color: #9DBB39;
+}
+.form-wizard-success .progress-bar {
+  background-color: #9DBB39;
+}
+.progress-striped .form-wizard-success .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.form-wizard-warning .wizard-tabs ul > li.active > a,
+.form-wizard-warning .wizard-tabs ul > li.active > a:hover,
+.form-wizard-warning .wizard-tabs ul > li.active > a:focus {
+  color: #C5BD3C;
+}
+.form-wizard-warning .wizard-tabs ul > li.active > a .badge {
+  background-color: #C5BD3C;
+}
+.form-wizard-warning .pager li:not(.disabled) > a {
+  color: #C5BD3C;
+}
+.form-wizard-warning .pager li:not(.disabled) > a:hover,
+.form-wizard-warning .pager li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #C5BD3C;
+}
+.form-wizard-warning .wizard-progress .wizard-steps li.active a span {
+  color: #C5BD3C;
+  border-color: #C5BD3C;
+}
+.form-wizard-warning .progress-bar {
+  background-color: #C5BD3C;
+}
+.progress-striped .form-wizard-warning .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.form-wizard-danger .wizard-tabs ul > li.active > a,
+.form-wizard-danger .wizard-tabs ul > li.active > a:hover,
+.form-wizard-danger .wizard-tabs ul > li.active > a:focus {
+  color: #A30000;
+}
+.form-wizard-danger .wizard-tabs ul > li.active > a .badge {
+  background-color: #A30000;
+}
+.form-wizard-danger .pager li:not(.disabled) > a {
+  color: #A30000;
+}
+.form-wizard-danger .pager li:not(.disabled) > a:hover,
+.form-wizard-danger .pager li:not(.disabled) > a:focus {
+  color: #fff;
+  background-color: #A30000;
+}
+.form-wizard-danger .wizard-progress .wizard-steps li.active a span {
+  color: #A30000;
+  border-color: #A30000;
+}
+.form-wizard-danger .progress-bar {
+  background-color: #A30000;
+}
+.progress-striped .form-wizard-danger .progress-bar {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+.wizard-progress {
+  margin: 0 15px 15px 15px;
+}
+.wizard-progress .steps-progress {
+  height: 2px;
+  margin-left: 14%;
+  margin-right: 14%;
+  position: relative;
+  top: 15px;
+  background: #cbcbcb;
+}
+.wizard-progress .steps-progress .progress-indicator {
+  height: 100%;
+  width: 0;
+  background: #cbcbcb;
+  -webkit-transition: width 0.2s ease-in;
+  -o-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+}
+.wizard-progress .wizard-steps {
+  display: table;
+  margin: 0;
+  padding: 15px 0 0;
+  list-style: none;
+}
+.wizard-progress .wizard-steps li {
+  -webkit-transition: margin 0.5s linear;
+  -o-transition: margin 0.5s linear;
+  transition: margin 0.5s linear;
+  position: relative;
+  display: table-cell;
+  text-align: center;
+  width: 1%;
+}
+.wizard-progress .wizard-steps li a {
+  position: relative;
+  display: block;
+  padding: 25px 8px 0;
+  font-size: 11px;
+  color: #161315;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+}
+.wizard-progress .wizard-steps li a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  padding: 0;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  line-height: 28px;
+  background: #cbcbcb;
+  color: white;
+  margin-top: -15px;
+  margin-left: -15px;
+  font-size: 13px;
+  text-indent: -1px;
+  border: 2px solid #cbcbcb;
+  -webkit-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+.wizard-progress .wizard-steps li.completed {
+  margin-left: -100%;
+}
+.wizard-progress .wizard-steps li.completed a span {
+  background: #cbcbcb;
+  color: white;
+}
+.wizard-progress .wizard-steps li.active {
+  margin-left: 0;
+}
+.wizard-progress .wizard-steps li.active a span {
+  background: white;
+  color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+.wizard-progress .wizard-steps li.completed.active a span {
+  color: #FFF;
+}
+.wizard-progress.wizard-progress-lg {
+  margin: 0 0 30px;
+}
+.wizard-progress.wizard-progress-lg .steps-progress {
+  height: 4px;
+  top: 30px;
+}
+.wizard-progress.wizard-progress-lg .wizard-steps {
+  padding-top: 30px;
+}
+.wizard-progress.wizard-progress-lg ul li a {
+  padding-top: 40px;
+  font-size: 14px;
+}
+.wizard-progress.wizard-progress-lg ul li a span {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  line-height: 56px;
+  margin-top: -30px;
+  margin-left: -30px;
+  font-size: 22px;
+  border-width: 4px;
+}
+@media only screen and (max-width: 991px) {
+  .wizard-progress,
+  .wizard-progress.wizard-progress-lg {
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .wizard-progress .steps-progress {
+    display: none;
+  }
+  .wizard-progress .wizard-steps {
+    display: block;
+    font-size: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+  .wizard-progress .wizard-steps li {
+    display: inline-block;
+    float: none;
+    position: relative;
+    width: 100%;
+  }
+  .wizard-progress .wizard-steps li a {
+    position: relative;
+    z-index: 2;
+  }
+  .wizard-progress .wizard-steps li:before,
+  .wizard-progress .wizard-steps li:after {
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+  }
+  .wizard-progress .wizard-steps li:before {
+    background: #cccccc;
+    left: 0;
+  }
+  .wizard-progress .wizard-steps li:after {
+    background: #cccccc;
+    right: 0;
+  }
+  .wizard-progress .wizard-steps li.completed:after {
+    background: #cccccc;
+  }
+  .wizard-progress .wizard-steps li:first-child:before,
+  .wizard-progress .wizard-steps li:first-child:after {
+    display: none;
+  }
+  .wizard-progress.wizard-progress-lg .wizard-steps li:before,
+  .wizard-progress.wizard-progress-lg .wizard-steps li:after {
+    height: 4px;
+  }
+}
+.form-wizard {
+  margin-bottom: 20px;
+}
+.form-wizard .tabs {
+  margin-bottom: 0;
+}
+.form-wizard .tab-content {
+  background-color: #ffffff;
+  margin: 15px -15px -15px -15px;
+  border: none;
+}
+.form-wizard ul.pager .next a,
+.form-wizard ul.pager .prev a,
+.form-wizard ul.pager .first a,
+.form-wizard ul.pager .last a,
+.form-wizard ul.pager .finish a {
+  cursor: pointer;
+}

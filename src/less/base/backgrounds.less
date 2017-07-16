@@ -1,0 +1,207 @@
+/**
+ * @file
+ * base/backgrounds.less.
+ */
+
+.unset-bg-color{background-color: transparent;}
+
+.bg-base{background-color:@body-bg;}
+.bg-light{background-color:@light-bg;}
+.bg-dark{
+  @color: @dark-bg;
+  background-color:@color;
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .border();
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+.bg-darker{
+  @color: @darker-bg;
+  background-color:@color;
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .border(@border-color-dark);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+/* -top section dark gradient */
+.gradient-darker{                #gradient > .vertical(@inverse-bg, @dark-inverse-bg);}
+/* -top section default button */
+@grad-dark-light: lighten(@inverse-bg, 2%);
+@grad-dark-dark: darken(@dark-inverse-bg, 2%);
+.gradient-dark{                  #gradient > .vertical(@grad-dark-light, @grad-dark-dark);}
+.gradient-dark-hover{            #gradient > .vertical(darken(@grad-dark-light, 8%), darken(@grad-dark-dark, 8%));}
+.gradient-dark-inverse-hover{    #gradient > .vertical(darken(@grad-dark-dark, 8%), darken(@grad-dark-light, 8%));}
+
+.highlighted{
+  .bg-primary;
+  padding:0 @third-space;
+}
+
+.bg-primary {
+   @color: @brand-primary;
+
+   color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+.bg-success {
+   @color: @brand-success;
+
+   color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+.bg-info {
+   @color: @brand-info;
+
+   color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+.bg-warning {
+   @color: @brand-warning;
+
+   color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+.bg-danger {
+  @color: @brand-danger;
+
+  color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    .bg-variant-styled-alt(@color);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}
+
+.bg-inverse {
+  @color: @inverse-bg;
+
+  color: @inverse-text-color;
+
+  .bg-variant(@color);
+
+  &.bg-styled {
+    .bg-variant-styled(@color);
+  }
+
+  &.bg-styled-alt{
+    #gradient.vertical(@dark-inverse-bg; @color; 0%; 30%);
+  }
+
+  &.bordered {
+    .box-variant-bordered(@color);
+  }
+
+  .jumbotron {
+    background: transparent;
+  }
+}

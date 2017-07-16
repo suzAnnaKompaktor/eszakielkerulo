@@ -1,0 +1,21 @@
+/**
+ * @file
+ * mixins/pager.less.
+ *
+ * Add Bootstrap pager component mixins.
+ */
+
+.pager-colorize(@color) {
+  li:not(.disabled) {
+
+    > a{
+      color: @color;
+    }
+
+    > a:hover,
+    > a:focus{
+      color: @inverse-text-color;
+      background-color: @color;
+    }
+  }
+}

@@ -1,0 +1,411 @@
+/**
+ * @file
+ * plugins/form-wizard.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/panels.less";
+@import (reference) "../mixins/icon.less";
+@import (reference) "../mixins/buttons.less";
+@import (reference) "../mixins/form-wizard.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+@import (reference) "../components/pager.less";
+
+.wizard-tabs {
+  margin-bottom: 15px;
+  .border-top();
+
+  ul.wizard-steps {
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    > li {
+      display: table-cell;
+      .border-bottom;
+
+      > a {
+        position: relative;
+        display: block;
+        padding: 7px;
+        font-size: 13px;
+        font-size: 1.3rem;
+        text-decoration: none;
+        color: @text-color;
+        .transition(none);
+        .drop-shadow;
+
+        &,
+        &:hover{
+          background: @dark-bg;
+          color: @gray;
+        }
+
+        &:active,
+        &:focus{
+          border-bottom: 0;
+        }
+
+        &:before,
+        &:after{
+          display: block;
+          content: '';
+          position: absolute;
+          top: 0;
+          right: -10px;
+          z-index: 1;
+          border: 17px solid transparent;
+          border-right: 0;
+          border-left: 10px solid transparent;
+          width: 0;
+          height: 0;
+          margin-left:-1px;
+        }
+
+        &:before{
+          z-index: 1;
+          right: -11px;
+          border-left-color: @border-color;
+        }
+
+        &:after{
+          z-index: 2;
+          border-left-color: @dark-bg;
+        }
+      }
+
+      &.disabled {
+        > a {
+          &,
+          &:hover,
+          &:focus{
+            color: lighten(@text-color, 30%);
+          }
+
+          .badge {
+            background-color: lighten(@text-color, 30%);
+          }
+        }
+      }
+
+      &:last-child {
+        > a {
+          &:before,
+          &:after {
+            display: none;
+          }
+        }
+      }
+
+      &.active {
+        border-bottom-color: transparent;
+
+        > a {
+          &,
+          &:hover,
+          &:focus{
+            background: @body-bg;
+            .unset-shadow;
+          }
+
+          &:after{
+            border-left-color: @body-bg;
+          }
+
+          .badge{
+            background-color: @gray-light;
+          }
+        }
+      }
+    }
+  }
+
+  .panel-body & {
+    margin: -15px -15px 15px -15px;
+
+    ul > li.active > a{
+      &,
+      &:hover,
+      &:focus{
+        background: white;
+        color: @gray;
+      }
+
+      &:after{
+        border-left-color: white;
+      }
+    }
+  }
+}
+
+.form-wizard-primary {
+  .wizard-tabs-colorize(@brand-primary);
+  .wizard-steps-colorize(@brand-primary);
+  .progress-bar {
+    .progress-bar-variant(@brand-primary);
+  }
+}
+
+.form-wizard-info {
+  .wizard-tabs-colorize(@brand-info);
+  .pager {
+    .pager-info;
+  }
+  .wizard-steps-colorize(@brand-info);
+  .progress-bar {
+    .progress-bar-variant(@brand-info);
+  }
+}
+
+.form-wizard-success {
+  .wizard-tabs-colorize(@brand-success);
+  .pager {
+    .pager-success;
+  }
+  .wizard-steps-colorize(@brand-success);
+  .progress-bar {
+    .progress-bar-variant(@brand-success);
+  }
+}
+
+.form-wizard-warning {
+  .wizard-tabs-colorize(@brand-warning);
+  .pager {
+    .pager-warning;
+  }
+  .wizard-steps-colorize(@brand-warning);
+  .progress-bar {
+    .progress-bar-variant(@brand-warning);
+  }
+}
+
+.form-wizard-danger {
+  .wizard-tabs-colorize(@brand-danger);
+  .pager {
+    .pager-danger;
+  }
+  .wizard-steps-colorize(@brand-danger);
+  .progress-bar {
+    .progress-bar-variant(@brand-danger);
+  }
+}
+
+.wizard-progress {
+  margin: 0 15px 15px 15px;
+
+  .steps-progress {
+    height: 2px;
+    margin-left: 14%;
+    margin-right: 14%;
+    position: relative;
+    top: 15px;
+    background: darken(@darker-bg, 10%);
+
+    .progress-indicator {
+      height: 100%;
+      width: 0;
+      background: darken(@darker-bg, 10%);
+      .transition(width 0.2s ease-in);
+    }
+  }
+
+  .wizard-steps {
+    display: table;
+    margin: 0;
+    padding: 15px 0 0;
+    list-style: none;
+
+    li {
+      .transition(margin 0.5s linear);
+      position: relative;
+      display: table-cell;
+      text-align: center;
+      width: 1%;
+
+      a {
+        position: relative;
+        display: block;
+        padding: 25px 8px 0;
+        font-size: 11px;
+        color: @text-color;
+        font-weight: bold;
+        line-height: 1;
+        text-decoration: none;
+
+        span {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          display: block;
+          .round-button(30px);
+          line-height: 28px;
+          background: darken(@darker-bg, 10%);
+          color: white;
+          margin-top: -15px;
+          margin-left: -15px;
+          font-size: 13px;
+          text-indent: -1px;
+          border: 2px solid darken(@darker-bg, 10%);
+          .transition(all 0.2s ease-in);
+        }
+      }
+
+      &.completed {
+        margin-left: -100%;
+
+        a span {
+          background:darken(@darker-bg, 10%);
+          color: white;
+        }
+      }
+
+      &.active {
+        margin-left: 0;
+
+        a span {
+          background: white;
+          color: @darker-bg;
+          border-color: @darker-bg;
+        }
+      }
+
+      &.completed.active {
+        a span {
+          color: #FFF;
+        }
+      }
+    }
+
+  }
+}
+
+.wizard-progress.wizard-progress-lg {
+  margin: 0 0 30px;
+
+  .steps-progress {
+    height: 4px;
+    top: 30px;
+  }
+
+  .wizard-steps {
+    padding-top: 30px;
+  }
+
+  ul li a {
+    padding-top: 40px;
+    font-size: 14px;
+
+    span {
+      .round-button(60px);
+      line-height: 56px;
+      margin-top: -30px;
+      margin-left: -30px;
+      font-size: 22px;
+      border-width: 4px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 991px) {
+  .wizard-progress,
+  .wizard-progress.wizard-progress-lg {
+    margin-bottom: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .wizard-progress {
+
+    .steps-progress {
+      display: none;
+    }
+
+    .wizard-steps {
+      display: block;
+      font-size: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 100%;
+
+      li {
+        display: inline-block;
+        float: none;
+        position: relative;
+        width: 100%;
+
+        a {
+          position: relative;
+          z-index: 2;
+        }
+
+        &:before,
+        &:after {
+          content: '';
+          display: block;
+          height: 2px;
+          position: absolute;
+          top: 0;
+          width: 50%;
+        }
+
+        &:before {
+          background: #cccccc;
+          left: 0;
+        }
+
+        &:after {
+          background: #cccccc;
+          right: 0;
+        }
+
+        &.completed:after {
+          background: #cccccc;
+        }
+
+        &:first-child:before,
+        &:first-child:after {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .wizard-progress.wizard-progress-lg .wizard-steps li:before,
+  .wizard-progress.wizard-progress-lg .wizard-steps li:after {
+    height: 4px;
+  }
+}
+
+.form-wizard {
+  margin-bottom: 20px;
+
+  .tabs {
+    margin-bottom: 0;
+  }
+
+  .tab-content {
+    .bg-light;
+    margin: 15px -15px -15px -15px;
+    border:none;
+  }
+
+  ul.pager .next a,
+  ul.pager .prev a,
+  ul.pager .first a,
+  ul.pager .last a,
+  ul.pager .finish a {
+    cursor: pointer;
+  }
+}

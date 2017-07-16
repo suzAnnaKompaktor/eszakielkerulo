@@ -1,0 +1,25 @@
+/**
+ * @file
+ * mixins/box-styles.less.
+ *
+ * Add box style mixins.
+ */
+
+.box-variant-bordered(@color) {
+  @darken: darken(@color, 8%);
+  @spin: spin(@darken, -10);
+  border-width: 1px;
+  border-style: solid;
+  border-color:@spin;
+}
+
+.box-variant-darken(@color) {
+  border-color:darken(@color, 3%);
+  .bg-variant-darken(@color);
+}
+
+.box-variant-styled-bordered(@color) {
+  .text-inverse;
+  .bg-variant-styled(@color);
+  .box-variant-bordered(@color);
+}

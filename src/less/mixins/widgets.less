@@ -1,0 +1,35 @@
+/**
+ * @file
+ * mixins/widget.less.
+ *
+ * Add widget mixins.
+ */
+
+.widget-colorize(@color) {
+  .panel-body {
+    .box-variant-styled-bordered(@color);
+
+    .widget-summary-footer {
+      .bg-variant-darken(@color);
+      color: @inverse-text-color; .opacity(0.9);
+      border-color:darken(@color, 3%);
+    }
+  }
+
+  .widget-icon,
+  .widget-icon i {
+    color: spin(darken(@color, 12%), -3);
+  }
+}
+
+.widget-icon-colorize(@color) {
+  .widget-icon {
+    color: @color;
+  }
+}
+
+.widget-icon-background-colorize(@color) {
+  .widget-icon {
+    background: spin(darken(@color, 8%), -3);
+  }
+}

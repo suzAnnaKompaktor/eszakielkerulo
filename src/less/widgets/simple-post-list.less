@@ -1,0 +1,53 @@
+/**
+ * @file
+ * widgets/simple-post.less.
+ */
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../../../vendor/bootstrap/less/thumbnails.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/widgets.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+@import (reference) "../components/thumbnails.less";
+
+ul.simple-post-list {
+  .list-unstyled();
+
+  li {
+    margin: 0 0 20px;
+
+    &:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+  }
+
+  .img-thumbnail {
+    float:left;
+    margin: 0 10px 0 0;
+
+    img {
+      width: 80px;
+      height:80px;
+    }
+  }
+
+  .post-title {
+    .h5;
+    margin:0;
+  }
+
+  .post-meta {
+    .text-xs;
+    color: @text-muted;
+  }
+}

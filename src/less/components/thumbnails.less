@@ -1,0 +1,72 @@
+/**
+ * @file
+ * components/thumbnails.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+
+.img-thumbnail,
+.thumbnail {
+  border-color: @border-color;
+  border-radius: 0;
+  .bg-light;
+  .drop-shadow-curved;
+}
+
+a.img-thumbnail {
+  display: inline-block;
+  overflow: hidden;
+
+  img {
+    .transition(all 0.1s linear);
+  }
+
+  &:hover {
+    img {
+      .scale(1.05);
+    }
+  }
+
+  .img-thumbnail {
+    padding: 0;
+    border: none;
+    .unset-shadow;
+  }
+}
+
+.thumbnail-gallery .img-thumbnail {
+  position: relative;
+
+  .zoom {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: @third-space @half-space;
+    font-size: 15px;
+    font-size: 1.5rem;
+    color:@inverse-text-color;
+    background-color: @dark-inverse-bg;
+    border-radius: 0 0 0 @border-radius-base;
+    .strong-shadow;
+    cursor: pointer;
+    .transition-transform(0.1s linear 0.1s);
+    .translate(100%, 0);
+  }
+
+  &:hover {
+    .zoom {
+      .translate(0, 0);
+    }
+  }
+}

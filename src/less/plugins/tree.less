@@ -1,0 +1,55 @@
+/**
+ * @file
+ * components/tree.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/panels.less";
+@import (reference) "../mixins/icon.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.jstree-default .jstree-checkbox {
+  background-image: url(../images/jstree.png);
+}
+
+.jstree-default .jstree-icon {
+  color: @text-color;
+}
+
+.jstree-default .jstree-hovered {
+  background-color: @state-primary-bg;
+}
+
+.jstree-default .jstree-clicked {
+  background-color: @state-primary-bg;
+}
+
+.jstree-default .jstree-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.jstree-default .colored {
+  color: @brand-primary;
+}
+
+.jstree-default .colored .jstree-icon {
+  color: @brand-primary;
+}
+
+.jstree-default .colored-icon .jstree-icon {
+  color: @brand-primary;
+}
+
+.jstree-default .folder .jstree-icon {
+  color: @brand-warning;
+}

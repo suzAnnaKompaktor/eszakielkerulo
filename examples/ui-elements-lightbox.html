@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Caffelatte - Responsive HTML5 Template 1.0</title>
+    <meta name="description" content="Caffelatte Admin - Responsive HTML5 Template 1.0">
+    <meta name="author" content="suzAnnaKompaktor">
+
+    <link rel="import" href="inc/menu-items.html">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" />
+
+    <!-- Web Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/dist/css/caffelatte.min.css" />
+    <link rel="stylesheet" href="/dist/css/plugins/magnific-popup.min.css" />
+
+  </head>
+
+  <body class="navbar-is-fixed-top" >
+    <div id="page">
+      <header id="navbar" role="banner" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <div class="navbar-brand">
+              <a href="/" title="" rel="home" class="pull-left">
+                <img src="/dist/images/logo.png" alt="" class="img-responsive" />
+              </a>
+            </div>
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <i class="icon icon-bars" aria-hidden="true"></i>
+            </button>
+          </div>
+
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <ul class="menu nav navbar-nav">
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <section role="main" class="main">
+
+      <div class="container container-main">
+        <div class="row">
+          <section class="col-xs-12">
+            <a id="main-content"></a>
+            <div class="mt-md">
+              <ul class="breadcrumb">
+                  <li><a href="/">Home</a></li>
+                  <li>UI elements</li>
+                  <li>Lightbox</li>
+              </ul>
+            </div>
+            <div class="title-section mb-sm clearfix">
+              <h1 class="page-title">Lightbox</h1>
+            </div>
+
+           <div class="row">
+              <div class="col-md-6">
+                <section class="panel" id="lightboxSingle">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Single image lightbox</h2>
+                    <p class="panel-subtitle">Three simple popups with different scaling settings.</p>
+                  </header>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <h5>Default</h5>
+                        <a href="images/!sample_img_01.jpg" data-plugin-lightbox data-plugin-lightbox-type="image" title="Caption. Can be aligned it to any side and contain any HTML.">
+                          <img class="img-responsive" src="images/!sample_img_01.jpg" width="150">
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Fits</h5>
+                        <a class="image-popup-vertical-fit" href="images/!sample_img_03.jpg" title="Fits horizontally and vertically,">
+                          <img class="img-responsive" src="images/!sample_img_03.jpg" width="150">
+                        </a>
+                      </div>
+                      <div class="col-md-4">
+                        <h5>Effects</h5>
+                        <a class="image-popup-no-margins" href="images/!sample_img_01.jpg">
+                          <img class="img-responsive" src="images/!sample_img_01.jpg" width="80">
+                        </a>
+                        <p class="pt-lg">No gaps, zoom animation, close icon in top-right corner.</p>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="panel" id="lightboxAnim">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Dialog with CSS animation</h2>
+                    <p class="panel-subtitle">Animations are added with simple CSS transitions, you can make them look however you wish.</p>
+                  </header>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <a class="mt-xs mb-xs mr-xs popup-with-zoom-anim btn btn-default" href="#small-dialog">Open with fade-zoom animation</a>
+                      </div>
+                      <div class="col-md-6">
+                        <a class="mt-xs mb-xs popup-with-move-anim btn btn-default" href="#small-dialog">Open with fade-slide animation</a>
+                      </div>
+                    </div>
+
+                    <!-- Dialog -->
+                    <div id="small-dialog" class="dialog dialog-sm zoom-anim-dialog mfp-hide">
+                      <h1 class="mt-unset">Dialog example</h1>
+                      <p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
+                    </div>
+
+                  </div>
+                </section>
+                <section class="panel" id="lightboxVideo">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Popup with video or map</h2>
+                    <p class="panel-subtitle">In this example lightboxes are automatically disabled on small screen size and default behavior of link is triggered.</p>
+                  </header>
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a class="mt-xs mb-xs mr-xs popup-youtube btn btn-default" href="http://www.youtube.com/watch?v=0O2aH4XLbto">Open YouTube Video</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="mt-xs mb-xs mr-xs popup-vimeo btn btn-default" href="https://vimeo.com/45830194">Open Vimeo Video</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="mt-xs mb-xs popup-gmaps btn btn-default" href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom">Open Google Map</a>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto">Open YouTube Video</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="popup-vimeo" href="https://vimeo.com/45830194">Open Vimeo Video</a>
+                      </div>
+                      <div class="col-md-4">
+                        <a class="popup-gmaps" href="https://maps.google.com/maps?q=221B+Baker+Street,+London,+United+Kingdom&amp;hl=en&amp;t=v&amp;hnear=221B+Baker+St,+London+NW1+6XE,+United+Kingdom">Open Google Map</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <section class="panel" id="lightboxAjax">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Ajax</h2>
+                      </header>
+                      <div class="panel-body">
+                        <p>You have full control of what is displayed in popup, align it to any side via CSS, enable or disable scroll on right side of window.</p>
+                        <a class="simple-ajax-popup btn btn-default" href="./ajax/ui-elements-modals-ajax.html">Load Ajax Content</a>
+                      </div>
+                    </section>
+                  </div>
+                  <div class="col-md-6">
+                    <section class="panel" id="lightboxForm">
+                      <header class="panel-heading">
+                        <div class="panel-actions">
+                          <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                          <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                        </div>
+
+                        <h2 class="panel-title">Form</h2>
+                      </header>
+                      <div class="panel-body">
+                        <p>Entered data is not lost if you open and close the popup or if you go to another page and then press back browser button.</p>
+
+                        <a class="popup-with-form btn btn-default" href="#testForm">Open Form</a>
+
+                        <!-- Form -->
+                        <form id="testForm" class="white-popup-block form-horizontal mfp-hide">
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <h3 class="mt-unset">Basic Form</h3>
+                              <p class="mb-lg">Entered data is not lost if you open and close the popup or if you go to another page and then press back browser button.</p>
+                            </div>
+                          </div>
+
+                          <div class="form-group mt-lg">
+                            <label class="col-sm-3 control-label">Name</label>
+                            <div class="col-sm-9">
+                              <input type="text" name="name" class="form-control" required="">
+                              <div class="form-description" data-display="placeholder">Your nick name...</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Email</label>
+                            <div class="col-sm-9">
+                              <input type="email" name="email" class="form-control" required="">
+                              <div class="form-description" data-display="placeholder">Your email address...</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">URL</label>
+                            <div class="col-sm-9">
+                              <input type="url" name="url" class="form-control">
+                              <div class="form-description" data-display="placeholder">Your website URL...</div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-3 control-label">Additional</label>
+                            <div class="col-sm-9">
+                              <textarea rows="5" class="form-control" required=""></textarea>
+                              <div class="form-description" data-display="placeholder">Additional informations...</div>
+                            </div>
+                          </div>
+
+                          <div class="row mb-lg">
+                            <div class="col-sm-9 col-sm-offset-3">
+                              <button class="btn btn-primary">Submit</button>
+                              <button type="reset" class="btn btn-default">Reset</button>
+                            </div>
+                          </div>
+
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <section class="panel" id="lightboxGallery">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="panel-actions-collapse"><i class="icon icon-caret-down"></i></a>
+                      <a href="#" class="panel-actions-close"><i class="icon icon-times"></i></a>
+                    </div>
+
+                    <h2 class="panel-title">Lightbox gallery</h2>
+                    <p class="panel-subtitle">You may put any HTML content in each gallery item and mix content types.</p>
+                  </header>
+                  <div class="panel-body">
+                    <p class="pb-lg">In this example lazy-loading of images is enabled for the next image based on move direction.</p>
+                    <div class="popup-gallery">
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_01.jpg" title="Image 1">
+                        <div class="img-responsive">
+                          <img src="images/!sample_img_01.jpg" width="105">
+                        </div>
+                      </a>
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_02.jpg" title="Image 2">
+                        <div class="img-responsive">
+                          <img src="images/!sample_img_02.jpg" width="105">
+                        </div>
+                      </a>
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_03.jpg" title="Image 3">
+                        <div class="img-responsive">
+                          <img src="images/!sample_img_03.jpg" width="105">
+                        </div>
+                      </a>
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_04.jpg" title="Image 4">
+                        <div class="img-responsive">
+                          <img src="images/!sample_img_04.jpg" width="105">
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </section>
+                <section class="panel" id="lightboxZoom">
+                  <header class="panel-heading">
+                    <div class="panel-actions">
+                      <a href="#" class="fa fa-caret-down"></a>
+                      <a href="#" class="fa fa-times"></a>
+                    </div>
+
+                    <h2 class="panel-title">Zoom Gallery</h2>
+                    <p class="panel-subtitle">Zoom effect works only with images.</p>
+                  </header>
+                  <div class="panel-body">
+                    <div class="zoom-gallery">
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_01.jpg" title="Image 1"><img class="img-responsive" src="images/!sample_img_01.jpg" width="280"></a>
+                      <a class="pull-left mb-xs mr-xs" href="images/!sample_img_03.jpg" title="Image 2"><img class="img-responsive" src="images/!sample_img_03.jpg" width="280"></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          <!-- end content -->
+          </section>
+        </div>
+       </div>
+      </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+              <h3>First col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Second col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class="col-sm-4">
+              <h3>Third col</h3>
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+          </div>
+        </div>
+      </div><!-- eof .footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              Copyright information
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- eof #page -->
+
+  <a href="#" rel="scroll-to-top" class="scroll-to-top">
+    <i class="icon icon-chevron-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Vendor -->
+  <script src="/dist/vendor/jquery/jquery.min.js"></script>
+  <script src="/dist/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="/dist/vendor/magnific-popup/magnific-popup.min.js"></script>
+  <script src="/dist/vendor/jquery-html5data/jquery-html5data.min.js"></script>
+
+   <script type="text/javascript">
+    var link = document.querySelector('link[rel="import"]');
+    var template = link.import.querySelector('template');
+    var clone = document.importNode(template.content, true);
+    document.querySelector('.navbar-nav').appendChild(clone);
+  </script>
+  <script src="inc/root.js"></script>
+
+  <!-- Theme Base, Components and Settings -->
+  <script src="/dist/js/caffelatte.js"></script>
+  <script src="/dist/js/plugins/all.js"></script>
+  <script src="/dist/js/init.min.js"></script>
+
+  <!-- Examples -->
+  <script src="./js/ui-elements.lightbox.js"></script>
+
+  </body>
+</html>

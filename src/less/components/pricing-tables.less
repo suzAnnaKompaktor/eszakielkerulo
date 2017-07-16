@@ -1,0 +1,130 @@
+/**
+ * @file
+ * components/pricing-tables.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/pricing-tables.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+@import (reference) "buttons.less";
+
+.pricing-table {
+  .plan {
+    .border;
+    .drop-shadow();
+    .bg-light;
+    text-align:center;
+    margin-bottom: @default-space;
+
+    h3 {
+      padding: @double-space @default-space @default-space @default-space;
+      margin: -1px -1px 50px -1px;
+      .bg-darker;
+      .border(@border-color-dark);
+      .drop-shadow();
+
+      span {
+        display: block;
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        margin: 20px auto -65px;
+        border: 1px solid @border-color-inverse;
+        .bg-inverse;
+        .strong-shadow;
+
+        strong{
+          .text-bold;
+          font-size: 22px;
+          line-height:100px;
+          color: @inverse-text-color;
+          display: block;
+          height: 100px;
+          width: 100px;
+          border-radius: 100px;
+          @darken: darken(@inverse-bg, 10%);
+          .box-shadow(inset @shadow-position 10px 10px rgba(red(@darken), green(@darken), blue(@darken), 0.8));
+        }
+      }
+    }
+
+    .btn {
+      margin-top: @default-space;
+    }
+
+    ul {
+      list-style: none;
+      margin: @default-space 0 0 0;
+      padding: @default-space;
+
+      > li {
+        padding: @half-space;
+        .border-top;
+      }
+    }
+  }
+
+  .plan-primary {
+    .pricing-table-variant(@brand-primary);
+    .btn {
+      .btn-primary;
+    }
+  }
+  .plan-info {
+    .pricing-table-variant(@brand-info);
+    .btn {
+      .btn-info;
+    }
+  }
+  .plan-success {
+    .pricing-table-variant(@brand-success);
+    .btn {
+      .btn-success;
+    }
+  }
+  .plan-warning {
+    .pricing-table-variant(@brand-warning);
+    .btn {
+      .btn-warning;
+    }
+  }
+  .plan-danger {
+    .pricing-table-variant(@brand-danger);
+    .btn {
+      .btn-danger;
+    }
+  }
+
+  .plan-ribbon-wrapper {
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    right: 14px;
+    top: -1px;
+    width: 85px;
+
+     .plan-ribbon {
+      .rotate(45deg);
+
+      .gradient-dark;
+      color: @inverse-text-color;
+      .strong-shadow;
+      font-size: 14px;
+      left: -5px;
+      padding: 7px 0;
+      position: relative;
+      text-align: center;
+      top: 15px;
+      width: 120px;
+    }
+  }
+}

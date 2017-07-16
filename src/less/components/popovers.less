@@ -1,0 +1,111 @@
+/**
+ * @file
+ * components/popovers.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/popovers.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.popover {
+  .popover-shadow;
+  .round-border;
+  color:@text-color;
+
+  .popover-title {
+    border-color:@border-color;
+  }
+  .popover-content {
+    padding: @half-space @default-space;
+  }
+
+  .@{fa-css-prefix}{
+    &.text-muted{color: @text-muted;}
+    &.text-primary{.text-emphasis-variant(@brand-primary);}
+    &.text-success{.text-emphasis-variant(@state-success-text);}
+    &.text-info{.text-emphasis-variant(@state-info-text);}
+    &.text-warning{.text-emphasis-variant(@state-warning-text);}
+    &.text-danger{.text-emphasis-variant(@state-danger-text);}
+    &.text-dark{.text-dark;}
+  }
+
+  &.popover-primary {
+    .popover-variant(@state-primary-bg; @state-primary-border; @state-primary-text);
+
+    .@{fa-css-prefix}{
+      color:@state-primary-text;
+    }
+  }
+
+  &.popover-success {
+    .popover-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
+  }
+
+  &.popover-info {
+    .popover-variant(@alert-info-bg; @alert-info-border; @alert-info-text);
+  }
+
+  &.popover-warning {
+    .popover-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-text);
+  }
+
+  &.popover-danger {
+    .popover-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+  }
+
+  &.popover-dark {
+    .popover-variant(@dark-bg; @popover-border-color; @text-color);
+
+    .@{fa-css-prefix} {
+      color: @state-info-text;
+    }
+
+    a {
+      color:@link-color;
+    }
+  }
+
+  &.notification {
+    .popover-variant(@inverse-bg; @border-color-inverse; @inverse-text-color);
+    .strong-shadow;
+    padding: 0;
+
+    a {
+      color: @link-color;
+
+      &:hover,
+      &:focus {
+        color: @link-hover-color;
+      }
+    }
+
+    .@{fa-css-prefix} {
+      color: @inverse-text-color;
+    }
+
+    &.popover-primary {
+      .popover-notification-variant(@brand-primary);
+    }
+    &.popover-info {
+      .popover-notification-variant(@brand-info);
+    }
+    &.popover-success {
+      .popover-notification-variant(@brand-success);
+    }
+    &.popover-warning {
+      .popover-notification-variant(darken(@brand-warning, 7%));
+    }
+    &.popover-danger {
+      .popover-notification-variant(@brand-danger);
+    }
+  }
+}

@@ -1,0 +1,71 @@
+/**
+ * @file
+ * layout/footer.less.
+ */
+
+.footer{
+  min-height:@footer-height;
+  background:@dark-bg;
+  .border-top(@border-color-light);
+  .drop-shadow(@shadow-position, -@shadow-distance);
+  margin-top:@half-space;
+  padding-top:@default-space;
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    margin-top:0;
+  }
+
+  .footer-bottom {
+    padding-bottom: @default-space;
+    .text-sm();
+  }
+
+  .footer-top {
+    padding-bottom: @default-space;
+
+    + .footer-bottom{
+      background:@darker-bg;
+      .border-top(@border-color-dark);
+      .drop-shadow(@shadow-position, -@shadow-distance);
+      padding-top: @default-space;
+    }
+  }
+}
+
+.footer-inverse{
+  background:@inverse-bg;
+  color: @inverse-text-color;
+  .border-top(lighten(@border-color-inverse, 20%));
+  .drop-shadow(0, -4px, 4px, rgba(0, 0, 0, 0.1));
+
+  h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
+  legend a{
+    color: @inverse-text-color
+  }
+
+  hr,
+  fieldset{
+    border-color: lighten(@border-color-inverse, 15%);
+  }
+
+  input,
+  textarea{
+    .input-inverse;
+  }
+
+  .footer-top {
+    + .footer-bottom {
+      background:@dark-inverse-bg;
+      .border-top(lighten(@border-color-inverse, 15%));
+      .strong-shadow();
+    }
+  }
+
+  .panel{
+    .strong-shadow;
+
+    &.widget{
+      .unset-shadow;
+    }
+  }
+}

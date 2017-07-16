@@ -1,0 +1,24 @@
+/**
+ * @file
+ * components/action-links.less.
+ */
+.action-links {
+  display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  padding-left: 0;
+  list-style: none;
+}
+.action-links li {
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+.action-links a.label {
+  font-size: 85%;
+  font-weight: normal;
+}
+.action-links a.label .icon {
+  margin-right: 5px;
+}

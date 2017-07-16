@@ -1,0 +1,159 @@
+/**
+ * @file
+ * components/widgets.less.
+ */
+
+@import (reference) "../variables-custom.less";
+@import (reference) "../variables.less";
+@import (reference) "../variables-font-awesome.less";
+@import (reference) "../../../vendor/bootstrap/less/mixins.less";
+@import (reference) "../../../vendor/bootstrap/less/type.less";
+@import (reference) "../font-awesome.less";
+@import (reference) "../mixins/shadows.less";
+@import (reference) "../mixins/borders.less";
+@import (reference) "../mixins/backgrounds.less";
+@import (reference) "../mixins/box-styles.less";
+@import (reference) "../mixins/widgets.less";
+@import (reference) "../base/backgrounds.less";
+@import (reference) "../base/typo.less";
+
+.widget {
+
+  .widget-icon {
+    float:right;
+    margin-left: @default-space;
+    font-size: 45px;
+    font-size: 4.5rem;
+    color:@inverse-bg;
+    text-align: center;
+    .text-muted;
+  }
+
+  .panel-heading .widget-icon {
+    float: none;
+    margin:@default-space auto;
+    font-size: 42px;
+    font-size: 4.2rem;
+    width: 90px;
+    height: 90px;
+    line-height: 90px;
+    .round-border(50%);
+    text-align: center;
+    color: @inverse-text-color;
+
+    &.bg-default {
+      background: @inverse-bg;
+      color: @inverse-text-color;
+    }
+  }
+}
+
+.widget-lg {
+  .widget-icon {
+    font-size: 53px;
+    font-size: 5.3rem;
+  }
+  .summary .title {
+    font-size: 120%;
+  }
+
+  font-size: 110%
+}
+
+.widget-sm {
+  .widget-icon {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+  .summary .title{
+    font-size: 110%;
+  }
+  font-size: 85%
+}
+
+.widget-xs {
+  .widget-icon {
+    font-size: 30px;
+    font-size: 3.0rem;
+  }
+  .summary .title{
+    font-size: 105%;
+  }
+  font-size: 80%
+}
+
+.widget-dark {
+  .widget-colorize(@inverse-bg);
+}
+
+.widget-primary {
+  .widget-colorize(@brand-primary);
+}
+.widget-info {
+  .widget-colorize(@brand-info);
+}
+.widget-success {
+  .widget-colorize(@brand-success);
+}
+.widget-warning {
+  .widget-colorize(@brand-warning);
+}
+.widget-danger {
+  .widget-colorize(@brand-danger);
+}
+
+.widget-icon-primary {
+  .widget-icon-colorize(@brand-primary);
+}
+
+.widget-icon-info {
+  .widget-icon-colorize(@brand-info);
+}
+.widget-icon-success {
+  .widget-icon-colorize(@brand-success);
+}
+.widget-icon-warning {
+  .widget-icon-colorize(@brand-warning);
+}
+.widget-icon-danger {
+  .widget-icon-colorize(@brand-danger);
+}
+
+.panel-primary {
+  .widget-icon-background-colorize(@brand-primary);
+}
+.panel-info {
+  .widget-icon-background-colorize(@brand-info);
+}
+.panel-success {
+  .widget-icon-background-colorize(@brand-success);
+}
+.panel-warning {
+  .widget-icon-background-colorize(@brand-warning);
+}
+.panel-danger {
+  .widget-icon-background-colorize(@brand-danger);
+}
+
+.panel {
+  .top-image {
+    position:relative;
+    height: 140px;
+    text-align: center;
+    overflow: hidden;
+    .border-top(@border-color-darker);
+    .border-left(@border-color-darker);
+    .border-right(@border-color-darker);
+
+    .image-container {
+      position: absolute;
+      top: -50%;
+      left:0;
+      right: 0;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+/**
+ * @file
+ * components/scroll-top.less.
+ */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  width: 44px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background-color: #5C5054;
+  color: #fff;
+  border: 1px solid #434343;
+  -webkit-box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.15s linear;
+  -o-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear;
+}
+a.scroll-to-top:hover,
+a.scroll-to-top:focus {
+  background-color: #41383b;
+}
+.scroll-to-top.bg-styled {
+  background-color: #5C5054;
+  -webkit-box-shadow: inset 0 0 20px rgba(78, 68, 72, 0.8);
+  box-shadow: inset 0 0 20px rgba(78, 68, 72, 0.8);
+  -webkit-box-shadow: inset 0 0 2rem rgba(78, 68, 72, 0.8);
+  box-shadow: inset 0 0 2rem rgba(78, 68, 72, 0.8);
+}
+.scroll-to-top.bg-styled-alt {
+  background-image: -webkit-linear-gradient(top, #4e4448 0%, #5C5054 30%);
+  background-image: -o-linear-gradient(top, #4e4448 0%, #5C5054 30%);
+  background-image: linear-gradient(to bottom, #4e4448 0%, #5C5054 30%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff4e4448', endColorstr='#ff5c5054', GradientType=0);
+}
+.scroll-to-top.bordered {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #463d42;
+}
+.scroll-to-top .jumbotron {
+  background: transparent;
+}
+.scroll-to-top.show {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.scroll-to-top.show:hover,
+.scroll-to-top.show:focus {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.scroll-to-top .icon {
+  line-height: 38px;
+}

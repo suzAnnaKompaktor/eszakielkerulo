@@ -1,0 +1,83 @@
+/**
+ * @file
+ * components/thumbnails.less.
+ */
+.img-thumbnail,
+.thumbnail {
+  border-color: #e0e0e0;
+  border-radius: 0;
+  background-color: #ffffff;
+  position: relative;
+  -webkit-box-shadow: 0 1px 2px #ededed, 0 0 4px #ededed inset;
+  box-shadow: 0 1px 2px #ededed, 0 0 4px #ededed inset;
+}
+.img-thumbnail:after,
+.thumbnail:after,
+.img-thumbnail:before,
+.thumbnail:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-box-shadow: 0 0 15px #e0e0e0;
+  box-shadow: 0 0 15px #e0e0e0;
+  top: 50%;
+  bottom: 0;
+  left: 5px;
+  right: 5px;
+  border-top-right-radius: 15%;
+  border-top-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+}
+a.img-thumbnail {
+  display: inline-block;
+  overflow: hidden;
+}
+a.img-thumbnail img {
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+a.img-thumbnail:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+a.img-thumbnail .img-thumbnail {
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.thumbnail-gallery .img-thumbnail {
+  position: relative;
+}
+.thumbnail-gallery .img-thumbnail .zoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 8px;
+  font-size: 15px;
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #4e4448;
+  border-radius: 0 0 0 5px;
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.1s linear 0.1s;
+  -moz-transition: -moz-transform 0.1s linear 0.1s;
+  -o-transition: -o-transform 0.1s linear 0.1s;
+  transition: transform 0.1s linear 0.1s;
+  -webkit-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+.thumbnail-gallery .img-thumbnail:hover .zoom {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
